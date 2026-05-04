@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags Semânticas</title>
+
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <section class="home">
+            <h1>Navegação</h1>
+            <nav class="navegacao">
+                <ul>
+                    <li><a href="../01-input-text-revisado/index.html">01 - Input-text</a></li>
+                    <li><a href="../02-input-number-password-submit-revisado/index.html">02 - Inputs Number, Password e
+                            Submit</a></li>
+                    <li><a href="../03-checkbox-radio-revisado/index.html">03 - Checkbox Radio</a></li>
+                    <li><a href="../04-select-revisado/index.html">04 - Select</a></li>
+                    <li><a href="../05-text-area-revisado/index.html">05 - Textarea</a></li>
+                    <li><a href="../06-button-revisado/index.html">06 - Button</a></li>
+                    <li><a href="../07-formulario-revisado/index.html">07 - Formulário</a></li>
+                    <li><a href="../08-tag-semanticas-parte-1-e-2-revisado/index.html">08 - Tags semânticas Partes 1 e
+                            2</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="conteudo">
+            <header>
+                <h1>Tags Semânticas</h1>
+                <p>Vamos entender o que significa tags semanticas no HTML e como isso é muito importante na criação de
+                    uma página web.</p>
+                <p>
+                    A palavra semântica significa a ciência que estuda o significado, o sentido das palavras e
+                    ainterpretação das palavras. <br>
+                    O HTML hoje em dia tem muito mais que apenas a função de criar paginas como também da significado
+                    para cada parte desse documento. <br>
+                    Para isso usamos as tags semanticas e com isso deixar as páginas muito mais claras para os
+                    programadores e para as <br>
+                    ferramentas de buscas, como o Google, por exemplo.
+                </p>
+
+                <p>
+                    A primeira que veremos é a tag (header) que pode ser usada tanto para o cabeçalho da nossa pagina
+                    como também para <br>
+                    agrupar títulos (h1, h2, h3... h6). <br>
+                    Essa tag ajuda nos mecanismos de buscas e pode melhorar a performance da nossa pagina rankeando ela
+                    melhor. <br>
+                    <img src="./src/img/tags-semanticas-02.png" alt="tags" title="Tags semânticas 01">
+                </p>
+
+                <p>
+                    A próxima é a tag (nav - 'navigation'= navegação) que geralmente contém uma lista (ul ou ol) e essa
+                    tag pode ser colocada dentro da tag "header" : <br>
+                    cada "ul ou ol" contém "li" dentro e cada uma dessa pode ter a tag "a" (âncora) que te leva para
+                    algum outro lugar usando <br>
+                    um (href="minha-pagina.index.html") seja dentro da própria página ou em páginas exteriores com o
+                    (target="_blank") <br>
+                    <img src="./src/img/tags-semanticas-02.png" alt="tags" title="Tags Semânticas 02">
+                </p>
+
+                <nav>
+                    <ul>
+                        <li><a href="Home">Home</a></li>
+                        <li><a href="Sobre">Sobre</a></li>
+                        <li><a href="Portifolio">Portifolio</a></li>
+                        <li><a href="Contato">Contato</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <p>
+                A próxima é a tag (main) que é onde vamos colocar o conteúdo principal da nossa página. <br>
+                Essa tag só pode aparecer apenas uma vez por página, igual acontece com a tag "h1". Não é recomendado
+                que ela apareceça mais uma vez. <br>
+            </p>
+
+            <p>
+                A próxima é a tag (section) que é a tag que representa seções na nossa página, todas as tags que vem
+                dentro dessa tag <br>
+                precisam ter relação entre elas como por exemplo: <br>
+                Podemos colocar todas essas tags dentro da tag "main" sem problemas, inclusive a tag "header" <br>
+                Observe que todas elas tem relação entre sí, todas pertencem ao mesmo grupo.
+            </p>
+
+            <p>
+                A próxima é a tag (article) serve para escrever conteúdos que sejam independentes, como por exemplo:
+                <br>
+                artigos de um blog que posso ter aquele conteúdo escrito ali, mas que não tem relação com outras coisas
+                é <br>
+                apenas um artigo independente. Com esse exemplo, posso pegar esse conteúdo postar em outros lugares e
+                mesmo <br>
+                assim ainda fará sentido. <br>
+                Um exemplo é no site <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/article"
+                    target="_blank">Mozilla Dev</a> que ao clicar para inspacionar o elemnto ele mostra o dev tools e
+                podemos identificar que o conteúdo todo <br>
+                está dentro de um "article" e mesmo que alguém pegue isso e coloque em outro lugar ainda sim fará
+                sentido porque é um <br>
+                conteúdo que fala sobre um tema específico que fala por sí só. <br>
+                É recomendado que cada "article" tenha uma tag de título dentro dela (h1, h2, h3...). Podemos colocar
+                essa tag dentro do "main".
+            </p>
+
+            <p>
+                A próxima é a tag (aside) é uma tag que serve para criar uma "div" de conteúdo adicional para o nosso
+                conteúdo principal, exemplo: <br>
+                Se estamos escrevendo um artigo de finanças essa tag, "aside", pode ser uma indicação para sites de
+                financeiras, corretoras ou <br>
+                sugestões de investimentos. Ela funciona como uma leitura adicional para o nosso conteúdo principal.
+                <br>
+                Normalmente o "aside" vai aparece como uma coluna lateral no site, mas também pode aparece ao final do
+                conteúdo <br>
+                com links para outras coisas extras.
+            </p>
+
+            <p>
+                A próxima é a tag (figure) que é usada para definir uma caixa de imagem e uma imagem dentro e também um
+                texto. <br>
+                Caso for colocar a tag "figure" e quiser colocar um texto/descrição dentro usamos a tag "figcaption".
+            </p>
+
+            <figure class="imagem-print">
+                <img src="./src/img/tags-semanticas-03.png" alt="tags" title="Tags semânticas 03">
+                <figcaption>Print de demonstração do código.</figcaption>
+            </figure>
+
+            <!-- <main>
+                <section>
+                    <h2>Módulo HTML intermediário</h2>
+                    <figure class="imagem">
+                        <img src="./src/img/logo-html5.png" alt="logo" title="logo HTML5">
+                        <figcaption>Esse é o logo do HTML.</figcaption>
+                    </figure>
+                    <p>Esse módulo é sobre HTML intermediário</p>
+                </section>
+
+                <article>
+                    <h2>C#</h2>
+                    <p>O C# é muito legal.</p>
+                </article>
+
+                <article>
+                    <h2>Javascript</h2>
+                    <p>O Javascript é uma linguegem de programação front-end e back-end com node.js.</p>
+                </article>
+
+                <aside>
+                    <div>
+                        <ul>
+                            <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/aside">Conteúdo complementar "aside".</a></li>
+                        </ul>
+                    </div>
+                </aside>
+            </main> -->
+
+            <p>
+                A próxima é a tag "footer" que serve para escrever um rodapé para nossa pagina, com alguns links de
+                contato, trabalhe conosco, <br>
+                politicas de privacidade e informações gerais.
+            </p>
+
+            <p>
+                A última tag de hoje é a "address", nela podemos definir várias coisas como: telefone, endereço, e-mail,
+                redes sociais etc. <br>
+                Ela normalmente pode ser colocada na tag "footer" do nosso site.
+            </p>
+
+            <figure class="imagem-print">
+                <img src="./src/img/tags-semanticas-04.png" alt="tags" title="Tags semânticas 04">
+                <figcaption>Print das tags explicadas</figcaption>
+            </figure>
+
+            <footer>
+                <address>
+                    <a href="https://www.linkedin.com/in/leandro-silva-752286232/" target="_blank">Meu linkedin</a>
+                </address>
+            </footer>
+        </section>
+    </div>
+</body>
+
+</html>

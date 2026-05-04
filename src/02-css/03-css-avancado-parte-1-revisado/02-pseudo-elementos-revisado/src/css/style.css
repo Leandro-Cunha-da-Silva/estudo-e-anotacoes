@@ -1,0 +1,80 @@
+body {
+    padding-inline: 15px;
+    margin: 10px;
+}
+
+html {
+    font-size: 24px;
+}
+
+.navegacao ul li {
+    height: 25px;
+    list-style: none;
+}
+
+.navegacao a {
+    text-decoration: none;
+}
+
+ul {
+    margin-bottom: 50px;
+}
+
+/* ESQUEMA */
+
+/* seletor::pseudo-elemento {
+    propriedade: valor;
+} */
+
+/* PARA ESTILIZAR SOMENTO A PRIMEIRA LETRA DE UM PARAGRAFO UTILIZA-SE O SEGUINTE PSEUDO ELEMENTO. */
+.first-letter::first-letter {
+    color: coral;
+}
+/* EM CADA UM DESSES PODE UTILIZA ID, CLASS E OUTROS. */
+/* PARA ESTILIZAR SOMENTE A PRIMEIRA LINHA UTILIZA-SE O SEGUINTE PSEUDO ELEMENTO. */
+.first-line::first-line {
+    color: red;
+}
+
+
+/*-----------------------------*/
+.conteudo .lista ul li {
+    margin: 22px;
+    list-style: circle;
+}
+
+/* PARA ESTILIZAR OS MARCADORES DE UMA LISTA UTILIZA-SE. */
+li::marker {
+    color: blue;
+    font-size: 40px;
+}
+
+/* Esses "./" e "../" são para indicar se o arquivo que você quer está na pasta atual ou em uma pasta acima no diretório, respectivamente. Isso nada mais é que uma forma de você navegar entre os diretórios para encontrar os arquivos. */
+
+/* O ELEMENTO "BEFORE" PODE SER UTILIZADO TANTO PARA COLOCAR IMAGENS COMO TEXTOS ANTES DOS ELEMENTOS.
+PARA COLOCAR TEXTO BASTA POR - "TEXTO QUE VOCÊ QUE". A ESTRUTURA É ESSA TEM QUE ABRIR ASPAS DUPLAS, ESCREVER E FECHAR AS ASPAS. */
+/* h2::before {
+    content: url(../img/logo.png);
+} */
+
+/* PODE TAMBEM UTILIZAR O "BEFORE" PARA COLOCAR IMAGENS NO BACKGROUND. */
+/* "Before" antes. */
+
+.before h2::before {
+    content: "";
+    background: url(../img/logo.png) center center no-repeat;
+    /* aqui precisa ter o "display: inline-block; altura e largura." */
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+}
+
+
+/* "After" depois. */
+.after h2::after {
+    content: "";
+    background: url(../img/logo.png) center center no-repeat;
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+}

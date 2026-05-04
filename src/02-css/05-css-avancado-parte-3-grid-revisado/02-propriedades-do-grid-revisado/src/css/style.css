@@ -1,0 +1,39 @@
+body {
+    padding-inline: 15px;
+    margin: 10px;
+}
+
+html {
+    font-size: 24px;
+}
+
+.menu ul li {
+    height: 25px;
+    list-style: none;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+ul {
+    margin-bottom: 50px;
+}
+
+
+
+.container-exemplo > div {
+    border: 1px solid black;
+    background-color: #8a2be2;
+    color: white;
+    font-size: 20px;
+}
+
+.container-exemplo {
+    display: grid;
+
+    grid-template: repeat(3, 150px) / repeat(2, auto);
+    grid-gap: 10px 20px;
+    /* grid-column-gap: 10px;
+    grid-row-gap: 10px; */
+}

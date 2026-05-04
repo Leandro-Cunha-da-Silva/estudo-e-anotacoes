@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionando vídeos com a tag vídeo - Parte 2</title>
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <section class="menu">
+            <h1>Navegação</h1>
+            <nav class="navegacao">
+                <ul>
+                    <li><a href="../01-tag-picture-revisado/index.html">Imagens responsivas usando a Tag Picture</a></li>
+                    <li><a href="../02-favicon-revisado/index.html">Criando um ícone de Favicon</a></li>
+                    <li><a href="../03-caracteres-emojis-revisado/index.html">Caracteres especiais e Emojis</a></li>
+                    <li><a href="../04-audio-revisado/index.html">Adicionando áudio na página</a></li>
+                    <li><a href="../05-video-parte-1-revisado/index.html">Adicionando vídeos com a tag vídeo - Parte 1</a></li>
+                    <li><a href="../06-video-parte-2-revisado/index.html">Adicionando vídeos com a tag vídeo - Parte 2</a></li>
+                    <li><a href="../07-iframes-revisado/index.html">Iframes</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="conteudo">
+            <div class="explicacao">
+                <p>
+                    Alguns navegadores não aceitam vídeo em MP4 então precisamos colocar o código da seguinte forma e
+                    precisamos converter os vídeos para os formatos a seguir.
+                </p>
+
+                <p>
+                    Site para fazer a conversão dos formatos de vídeos:
+                    <a href="https://convertio.co/pt/" target="_blank" rel="noopener noreferrer">Convertio</a>
+                </p>
+
+                <div class="img">
+                    <figure>
+                        <img src="./src/img/01-videos-02.png" alt="Código para por vídeo na nossa página">
+                        <figcaption>A tag "P" ali dentro é para o caso do vídeo não carregar e informar para o usuário o que houve. Podemos inclusive colocar um link para que ele possa atualizar seu navegador ou baixar um que funcione com os formatos de vídeo que colocamos no projeto.</figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="video">
+                <video controls width="400" poster="./src/img/thumb.jpg">
+                    <source src="./src/video/video.mp4" type="video/mp4">
+                    <source src="./src/video/video.ogg" type="video/ogg">
+                    <source src="./src/video/video.webm" type="video/webm">
+
+                    <p>Esse navegador não tem suporte a tag e vídeo.</p>
+                </video>
+            </div>
+
+            <div class="explicacao">
+                <h2>Desvantagens:</h2>
+                <p>
+                    Como falado na "Parte - 1", usar a tag 'video' para carregar vídeos de uma biblioteca própria é rui porque os vídeos são pesados e ocupam muitos megas de espaço. Para isso teremos muitos gastos no servidor para armazenar tudo e toda vez que o usuário carregar nosso vídeo teremos gastos por causa dessa transação de banda. Além disso o usuário final também acaba usando muita internet para carregar nosso vídeo se por exemplo ele estiver usando um celular sem wifi.
+                </p>
+
+                <p>
+                    Melhor que o cliente para quem estamos fazendo o trabalho suba seus vídeos para o Youtube ou Vimeo. Depois usando <a href="../07-iframes/index.html">Iframes</a> colocamos o vídeo no projeto. <br>
+                    Assim fica muito melhor para o usuário final e o cliente que não vai gastar com hospedagem de vídeo em servidor próprio.
+                </p>
+
+                <p>
+                    Uma desvantangem do Youtube é que ele não permite usar iframes para vídeos privados. Se essa for uma necessidade do cliente teremos que usar outros provedores como o Vimeo que permite fazer isso.
+                </p>
+            </div>
+
+        </section>
+    </div>
+</body>
+
+</html>

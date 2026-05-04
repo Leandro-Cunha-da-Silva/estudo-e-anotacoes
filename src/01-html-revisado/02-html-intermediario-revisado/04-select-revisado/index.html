@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select</title>
+
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <section class="home">
+            <h1>Navegação</h1>
+            <nav class="navegacao">
+                <ul>
+                    <li><a href="../01-input-text-revisado/index.html">01 - Input-text</a></li>
+                    <li><a href="../02-input-number-password-submit-revisado/index.html">02 - Inputs Number, Password e
+                            Submit</a></li>
+                    <li><a href="../03-checkbox-radio-revisado/index.html">03 - Checkbox Radio</a></li>
+                    <li><a href="../04-select-revisado/index.html">04 - Select</a></li>
+                    <li><a href="../05-text-area-revisado/index.html">05 - Textarea</a></li>
+                    <li><a href="../06-button-revisado/index.html">06 - Button</a></li>
+                    <li><a href="../07-formulario-revisado/index.html">07 - Formulário</a></li>
+                    <li><a href="../08-tag-semanticas-parte-1-e-2-revisado/index.html">08 - Tags semânticas Partes 1 e 2</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="conteudo">
+            <h1>Select</h1>
+            <p>
+                Aqui veremos a tag "Select" que serve para selecionar um ou mais valores para enviar para o back-end por exemplo. <br>
+                Para escrever a tag vamos usar o (select - com abertura e fechamento de tag) e dentro do select vamos colocar as opções que o usuário vai poder selecionar quando estiver aqui. <br>
+                Dentro do já criado "select" vamos colocar um "option" seus atirbutos e valores: <br>
+                (select <br>
+                option value="senhor dos anéis">Senhor dos Anéis <br> )
+                <br>
+                Podemos também criar um label para isso (label for="Filmes">/label)
+            </p>
+
+            <label for="Filmes"></label>
+            <Select id="filmes" name="filmes">
+                <option value="">Selecione um filme</option>
+                <option value="senhor dos anéis">Senhor dos Anéis</option>
+                <option value="Mad Max">Mad Max</option>
+                <option value="Harry Potter">Harry Potter</option>
+                <option value="Vingadores">Vingadores</option>
+            </Select>
+        </section>
+    </div>
+</body>
+
+</html>

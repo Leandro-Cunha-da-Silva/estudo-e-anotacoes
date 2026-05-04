@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionando vídeos com a tag vídeo - Parte 1</title>
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <section class="menu">
+            <h1>Navegação</h1>
+            <nav class="navegacao">
+                <ul>
+                    <li><a href="../01-tag-picture-revisado/index.html">Imagens responsivas usando a Tag Picture</a></li>
+                    <li><a href="../02-favicon-revisado/index.html">Criando um ícone de Favicon</a></li>
+                    <li><a href="../03-caracteres-emojis-revisado/index.html">Caracteres especiais e Emojis</a></li>
+                    <li><a href="../04-audio-revisado/index.html">Adicionando áudio na página</a></li>
+                    <li><a href="../05-video-parte-1-revisado/index.html">Adicionando vídeos com a tag vídeo - Parte 1</a></li>
+                    <li><a href="../06-video-parte-2-revisado/index.html">Adicionando vídeos com a tag vídeo - Parte 2</a></li>
+                    <li><a href="../07-iframes-revisado/index.html">Iframes</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="conteudo">
+            <div class="explicacao">
+                <h1>Vídeo parte 1</h1>
+                <p>
+                    Quando colocamos o vídeo, assim como no áudio, precisamos colocar o atributo "controls" para que
+                    apareçam os controles de play e áudio. Para deixar o vídeo em um tamanho mais legal pordemos colocar
+                    o "width" e por o valor que queremos. Podemos fazer isso tanto pela tag de vídeo quanto pelo CSS.
+                </p>
+                <p>
+                    Podemos usar o autoplay para da play no vídeo assim que a página for carregada (melhor deixar isso
+                    para o usuário decidir). Para dar autoplay temos que usar também o "muted". Isso varia de navegador
+                    para navegador, no Chrome precisa ser assim. <br>
+                    Normalmente isso é usado para sites que tem algum painel e precisa ter um vídeo rolando por trás e
+                    em looping, como por exemplo esse projeto do Mário que fizemos:
+                    <a href="https://leandro-cunha-da-silva.github.io/projeto-mario-treino/" target="_blank"
+                        rel="noopener noreferrer">Projeto Mário</a>
+                </p>
+
+                <p>
+                    Outro atributo que podemos colocar é o "poster", com ele podemos colocar uma capa para nosso vídeo.
+                    Para isso não podemos usar o "loop".
+                </p>
+
+                <p>
+                    Para colocar uma capa no vídeo colocamos "poster" e direcionamos para a foto de capa desejada.
+                </p>
+
+
+
+                
+
+
+                <div class="img">
+                    <figure>
+                        <img src="./src/img/01-videos-01.png" alt="Código para por o vídeo na nossa página.">
+                        <figcaption>Nosso código todo fica assim</figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="video">
+                <video src="./src/video/video.mp4" controls width="400" autoplay muted loop
+                    poster="./src/img/thumb.jpg"></video>
+            </div>
+
+            <p>Aqui temos dois sites que podemos baixar vídeos para usar de forma gratuita nos nossos projetos:</p>
+            <p><a href="https://www.pexels.com/pt-br/" target="_blank" rel="noopener noreferrer">Pexels</a></p>
+            <p><a href="https://www.storyblocks.com/video" target="_blank" rel="noopener noreferrer">Storyblocks</a>
+            </p>
+
+            
+
+            <div class="explicacao">
+                <p>Usar a tag de vídeo dessa forma ocupa muito espaço na hospedagem do site uma alternativa é usar sites
+                    como o YouTube para puxar um vídeo de lá e colocar aqui usando o "iframes". Veja na aula
+                    <a href="../07-iframes/index.html">Iframes</a>.
+                </p>
+            </div>
+        </section>
+    </div>
+
+</body>
+
+</html>

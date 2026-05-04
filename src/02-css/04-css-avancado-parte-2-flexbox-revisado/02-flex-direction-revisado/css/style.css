@@ -1,0 +1,62 @@
+body {
+    padding-inline: 15px;
+    margin: 10px;
+}
+
+html {
+    font-size: 24px;
+}
+
+.menu ul li {
+    height: 25px;
+    list-style: none;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+ul {
+    margin-bottom: 50px;
+}
+
+
+
+
+.container {
+    width: 500px;
+    height: 500px;
+
+    border: 2px solid #000;
+    margin: 20px;
+}
+
+.container div {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.row-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.column-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+}

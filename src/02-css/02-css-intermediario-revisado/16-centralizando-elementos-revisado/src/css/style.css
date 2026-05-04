@@ -1,0 +1,100 @@
+body {
+    padding-inline: 15px;
+    margin: 10px;
+}
+
+.navegacao ul li {
+    height: 25px;
+    list-style: none;
+}
+
+.navegacao a {
+    text-decoration: none;
+}
+
+html {
+    font-size: 24px;
+}
+
+ul {
+    margin-bottom: 50px;
+}
+
+
+/* -------------- ESTILOS GERAIS ------------ */
+.conteudo {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+    /* background-color: black; */
+}
+
+.conteudo h1 {
+    color: black;
+}
+
+.container-explicacao {
+    background-color: lightgrey;
+    height: 300px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.btn {
+    width: 250px;
+    height: 50px;
+    background-color: lightseagreen;
+    color: white;
+    font-size: 1.2em;
+}
+
+/* -------------- ESTILOS GERAIS ------------ */
+
+.texto-centralizado-1 {
+    width: 350px;
+    height: 250px;
+    background-color: orange;
+    text-align: center;
+
+    /* line-height é para centralizar vertical e horizontalmente o elemento */
+    line-height: 250px;
+}
+
+
+.texto-centralizado-2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    /* transform: translateY(-50%);
+    transform: translateX(-50%); */
+
+    /* sempre bom usar o modo simplificado do código como podemos ver abaixo */
+    transform: translate(-50%, -50%);
+}
+
+
+/* O botão por padrão usa o 'display: in-line' e por esse motivo não conseguimos colocar 'margin: auto' nele. Para isso teremos que usar primeiro o 'display: block' e agora sim funciona, o elemento fica centralizado.*/
+.alinhado-margin-auto {
+    display: block;
+    margin: auto;
+}
+
+
+/* Para centralizar o elemento na horizontal e vertical usamos o seguinte: Usaremos os comandos na ordem, mas atenção o 'position: absolute' não deixa que apliquemos o 'margin: auto' e para contornar isso usaremos o top, left, right e bottom com valores zero (0). Dessa forma conseguimos centrar o elemento na horizontal e vertical.*/
+.alinhado-absolute {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+
+
+/* O 'text-align: center' só vai funcionar na imagem se aplicarmos o comando no elemento pai, como é o caso. A classe descrita está na div (pai). */
+.container-text-align {
+    text-align: center;
+}

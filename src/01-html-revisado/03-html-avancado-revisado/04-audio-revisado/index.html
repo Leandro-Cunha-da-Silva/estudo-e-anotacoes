@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionando Áudio na página</title>
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <section class="menu">
+            <h1>Navegação</h1>
+            <nav class="navegacao">
+                <ul>
+                    <li><a href="../01-tag-picture-revisado/index.html">Imagens responsivas usando a Tag Picture</a></li>
+                    <li><a href="../02-favicon-revisado/index.html">Criando um ícone de Favicon</a></li>
+                    <li><a href="../03-caracteres-emojis-revisado/index.html">Caracteres especiais e Emojis</a></li>
+                    <li><a href="../04-audio-revisado/index.html">Adicionando áudio na página</a></li>
+                    <li><a href="../05-video-parte-1-revisado/index.html">Adicionando vídeos com a tag vídeo - Parte 1</a></li>
+                    <li><a href="../06-video-parte-2-revisado/index.html">Adicionando vídeos com a tag vídeo - Parte 2</a></li>
+                    <li><a href="../07-iframes-revisado/index.html">Iframes</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="conteudo">
+            <h1>Áudio</h1>
+
+            <div class="audio">
+                <audio controls>
+                    <source src="./src/audio/audio.ogg" type="audio/ogg">
+                    <source src="./src/audio/audio.mp3" type="audio/mp3">
+                    <source src="./src/audio/audio.wav" type="audio/wav">
+                </audio>
+            </div>
+
+            <div class="explicacao">
+                <div>
+                    <figure>
+                        <img src="./src/img/01-audio-01.png" alt="">
+                    </figure>
+                </div>
+
+                <div class="sobre-audio">
+                    <p>Para aplicar nossa tag de áudio precisamos escrever o código descrito acima na imagem.</p>
+                    <p>Quando escrevemos "audio" o emmet(autocomplete) nos da o seguinte caminho: "audio src="</p>
+                    <p>Apenas isso não é o suficiente para que nosso áudio apareça na tela. Precisamos colocar logo após
+                        o "audio" o atributo "controls" e agora sim aparece nosso áudio na tela. O controls serve para
+                        fazer nossa tag de áudio aparecer e com ela mostra todos os controles da nossa tag, como por
+                        exemplo: o botão play, minutos que o áudio já passou e quantos minutos tem o áudio total, barra
+                        de progresso, botão de volume e os 3 pontinhos que servem para fazer download do áudio e
+                        redefinir a velocidade dele.</p>
+                    <p>Podemos colocar outro atributo que é o "autoplay", mas é melhor não por. Isso serve para que
+                        quando nossa página for recarregada ou o usuário entrar nela o audio começa trocar sozinho.
+                        Melhor deixar isso quieto a menos que precise</p>
+                    <p>Outro atributo que temos é o "preload", ele vai oferecer 3 tipos, que são: auto, metadata e none
+                    </p>
+                    <p>AUTO: é o atributo padrão, sinalizando isso ou não é o que vai aparecer por padrão. O problema
+                        dele é que carrega o áudio todo assim que a tela é carregada, mesmo que nosso usuário não clique
+                        no áudio ele vai carregar gastante banda atoa. Se tiver 10 aúdios na nossa página o site vai
+                        carregar tudo sem necessidade.</p>
+                    <p>METADATA: Esse vai servir para carregar apenas algumas informações do áudio e não o áudio todo.
+                        Como por exemplo vai carregar quanto tempo tem nosso áduio.</p>
+                    <p>NONE: Esse não vai carregar nada, mas isso é um problema também porque se o áudio for muito
+                        grande quando o usuário clicar em cima pode ter um delay até carregar alguma coisa e começar a
+                        tocar.</p>
+                </div>
+
+                <div class="compatibilidade">
+                    <h4>Tag de áudio e navegadores</h4>
+                    <p>Cada navegador pode aceitar ou não diferentes extensões de áduio. Temos 3 tipos de extensões "ogg", "mp3" e "wav".</p>
+                    <p>Para melhorar nosso site e deixar tudo preparado para cada tipo aceito nos navegadores podemos escrever o código conforme mostrado na imagem. Assim quando o ususário carregar nossa página no navegador que ele prefere usar vai carregar o áudio.</p>
+                    <p>Quando for postar o áudio devemos primeiro mudar as versões dele, podemos fazer isso nesse site <a href="https://convertio.co/pt/">Convertion</a>.</p>
+                    <p>Só pegar o áudio, colocar nele e converter para a versão escolida.</p>
+                    <h2>Cuidado com direitos autorais!!</h2>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

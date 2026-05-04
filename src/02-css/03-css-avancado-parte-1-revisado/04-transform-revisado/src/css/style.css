@@ -1,0 +1,51 @@
+body {
+    padding-inline: 15px;
+    margin: 10px;
+}
+
+html {
+    font-size: 24px;
+}
+
+.navegacao ul li {
+    height: 25px;
+    list-style: none;
+}
+
+.navegacao a {
+    text-decoration: none;
+}
+
+ul {
+    margin-bottom: 50px;
+}
+
+
+
+img {
+    width: 200px;
+}
+
+
+/* Estilo com scale 1*/
+img.scale {
+    transform: scale(2, 3);
+}
+
+/* Estilo com scale 2*/
+/* img.scale {
+    transform: scaleY(2);
+} */
+
+
+
+/* Estilo com rotate.*/
+img.rotate {
+    transform: rotate(45deg);
+}
+
+
+/* Estilo translate.*/
+img.translate {
+    transform: translate(50px, 20px);
+}

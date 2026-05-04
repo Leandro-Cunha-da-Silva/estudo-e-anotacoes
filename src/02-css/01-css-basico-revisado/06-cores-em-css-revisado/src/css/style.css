@@ -1,0 +1,58 @@
+body {
+    margin: 15px;
+    padding: 10px;
+    background-color: black;
+    color: aliceblue;
+}
+.home {
+    width: 30%;
+}
+
+.navegacao {
+    margin: 5px;
+    padding: 10px;
+}
+
+.navegacao a {
+    display: block;
+    height: 30px;
+    text-decoration: none;
+}
+
+.navegacao a:hover {
+    height: 25px;
+    border-bottom: 2px solid #fff;
+}
+
+.cor-solida p {
+    color: red;
+}
+
+.rgb p {
+    color: rgb(255, 0, 0);
+}
+
+.rgba p {
+    color: rgba(255, 0, 0, 0.5);
+}
+
+.hexadecimal p {
+    color: #ff0000;
+}
+
+.hsl .h {
+    background-color: hsl(0, 100%, 50%);
+}
+
+.hsl .s {
+    background-color: hsl(0, 100%, 0%);
+}
+
+.hsl .l {
+    color: black;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.hsla .a {
+    background-color: hsla(0, 100%, 50%, 0.5);
+}

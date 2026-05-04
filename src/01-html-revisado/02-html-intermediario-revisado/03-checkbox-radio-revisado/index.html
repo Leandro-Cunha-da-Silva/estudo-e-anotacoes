@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox, Radio</title>
+
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <section class="home">
+            <h1>Navegação</h1>
+            <nav class="navegacao">
+                <ul>
+                    <li><a href="../01-input-text-revisado/index.html">01 - Input-text</a></li>
+                    <li><a href="../02-input-number-password-submit-revisado/index.html">02 - Inputs Number, Password e
+                            Submit</a></li>
+                    <li><a href="../03-checkbox-radio-revisado/index.html">03 - Checkbox Radio</a></li>
+                    <li><a href="../04-select-revisado/index.html">04 - Select</a></li>
+                    <li><a href="../05-text-area-revisado/index.html">05 - Textarea</a></li>
+                    <li><a href="../06-button-revisado/index.html">06 - Button</a></li>
+                    <li><a href="../07-formulario-revisado/index.html">07 - Formulário</a></li>
+                    <li><a href="../08-tag-semanticas-parte-1-e-2-revisado/index.html">08 - Tags semânticas Partes 1 e 2</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="conteudo">
+            <h1>Checkbox, Radio</h1>
+
+            <p>
+                Aqui veremos os inputs de "checkbox" e "radio" que servem para preechimento de questionário e formularios. <br>
+                Também temos a presença do "label" (rótulo), que serve para ligar um elemento ao outro. Como por exemplo usamos o "label" para ligar o texto "c#" ou "javascript" <br> a caixa na sua frente através de um atributo "for" e "id" dentro de cada um, assim: <br><br>
+                (label for="c#">C# /label), <br>
+                (input id="c#" type="checkbox" name="linguagens").
+            </p>
+            <p>
+                Um atributo que pode ser colocado aqui é o "checked" que serve para marcar o checkbox sempre que a pagina for atualizada, mas acho que isso não é necessário já que quem vai marcar as coisas é o usuário.
+            </p>
+            <p>
+                Uma coisa importe para os dois grupos de inputs é que o atributo "name" precisa ser igual para cada um seja o checkbox ou radio. <br>
+                No primeiro exemplo 'linguagens' o name para o C# e Javascript são os mesmos (name="linguagens") da mesma forma que o 'name' para o gênero são os mesmo (name="genero"). <br>
+                No segundo, gênero, é muito importante que seja o mesmo nome já que e o 'input radio' posso marcar apenas um diferente do checkbox que pode marcar vários.
+            </p>
+
+            <h3>Linguagens de programação</h3>
+            <label for="c#">C#</label>
+            <input id="c#" type="checkbox" name="linguagens">
+            <br>
+
+            <label for="javascript">Javascript</label>
+            <input id="javascript" type="checkbox" name="linguagens" >
+            <br><br>
+
+            <h3>Gênero</h3>
+            <label for="masculino">Masculino</label>
+            <input id="masculino" type="radio" name="genero">
+
+            <label for="feminino">Feminino</label>
+            <input id="feminino" type="radio" name="genero">
+        </section>
+    </div>
+</body>
+
+</html>

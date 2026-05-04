@@ -1,0 +1,52 @@
+body {
+    padding-inline: 15px;
+    margin: 10px;
+}
+
+.navegacao ul li {
+    height: 25px;
+    list-style: none;
+}
+
+.navegacao a {
+    text-decoration: none;
+}
+
+p {
+    color: coral;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.bg {
+    background-color: lightgreen;
+    background-image: url('../img/cat.png');
+}
+
+.bg-image {
+    width: 360px;
+    height: 360px;
+}
+
+.bg-repeat {
+    background-repeat: no-repeat;
+    height: 540px;
+}
+
+.bg-size-cover {
+    background-size: cover;
+    height: 540px;
+}
+
+.bg-fixed {
+    background-attachment: fixed;
+    height: 360px;
+}
+
+.bg-position {
+    /* background-position: bottom right;
+    background-repeat: no-repeat; */
+    height: 560px;
+
+    background: #000 url('../img/cat.png') no-repeat right top;
+}

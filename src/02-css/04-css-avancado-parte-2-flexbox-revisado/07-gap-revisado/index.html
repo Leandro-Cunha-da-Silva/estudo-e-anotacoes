@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gap</title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container-menu">
+        <section class="menu">
+            <h1>Navegação</h1>
+            <ul>
+                <li><a href="../01-intro-flexbox-revisado/index.html">01-Introdução Flexbox</a></li>
+                <li><a href="../02-flex-direction-revisado/index.html">02-Flex Direction</a></li>
+                <li><a href="../03-justify-content-revisado/index.html">03-Justify Content</a></li>
+                <li><a href="../04-align-items-revisado/index.html">04-Align items</a></li>
+                <li><a href="../05-flex-wrap-e-flex-flow-revisado/index.html">05-Flex wrap e Flex flow</a></li>
+                <li><a href="../06-align-content-revisado/index.html">06-Align Content</a></li>
+                <li><a href="../07-gap-revisado/index.html">07-Gap</a></li>
+                <li><a href="../08-grow-revisado/index.html">08-Grow</a></li>
+                <li><a href="../09-basis-revisado/index.html">09-Basis</a></li>
+                <li><a href="../10-shrink-revisado/index.html">10-Shrink</a></li>
+                <li><a href="../11-flex-revisado/index.html">11-Flex</a></li>
+                <li><a href="../12-order-revisado/index.html">12-Order</a></li>
+                <li><a href="../13-align-self-revisado/index.html">13-Align Self</a></li>
+                <li><a href="../14-dicas-finais-revisado/index.html">14-Dicas finais</a></li>
+            </ul>
+        </section>
+
+        <section class="conteudo">
+            <div class="explicacao">
+                <h2>GAP</h2>
+                <p>O GAP é uma propriedade do CSS que serve para definir o espaçamento entre todos os itens de um container, seja ele <a href="../11-flex-revisado/index.html" target="_blank" rel="noopener noreferrer">flex</a> ou <a href="#" target="_blank" rel="noopener noreferrer">grid</a>.</p>
+                <p>O GAP também é um shorthand para 'column-gap'(gap em coluna) e 'row-gap'(gap em linha). Isso significa que podemos escrever ele com dois valores, o primeiro valor se refere a 'column-gap', ele só vai ser aplicado quando o flex-direction for definido como 'column', e o segundo valor refere-se a 'row-gap' que só vai ser aplicado quando o flex-direction estiver defindo como 'row'.</p>
+                <p>Podemos utilizar valores em pixels ou porcentagem.</p>
+                <p>Importante! O GAP só espaça os elementos filhos do container flex ou grid, ele não cria espaçamento ao redor dos itens como o margin faz. Então ele só cria um espaço entre os itens dentro do container.</p>
+            </div>
+
+            <div class="exemplo">
+                <p>Column ".gap-1 {display: flex; gap: 50px; flex-direction: column;}".</p>
+                <div class="container gap-1">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                </div>
+                <p>Row ".gap-2 {display: flex; gap: 20px; flex-direction: row;}".</p>
+                <div class="container gap-2">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+body {
+    padding-inline: 15px;
+    margin: 10px;
+}
+
+html {
+    font-size: 24px;
+}
+
+.menu ul li {
+    height: 25px;
+    list-style: none;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+ul {
+    margin-bottom: 50px;
+}
+
+
+
+.container {
+    width: 500px;
+    height: 500px;
+
+    border: 2px solid #000;
+    margin: 20px;
+}
+
+.container div {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+
+.flex-start {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.flex-end {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.space-between {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.space-around {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.space-evenly {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}

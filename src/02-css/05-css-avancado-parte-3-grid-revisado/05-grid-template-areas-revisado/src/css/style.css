@@ -1,0 +1,72 @@
+body {
+    padding-inline: 15px;
+    margin: 10px;
+}
+
+html {
+    font-size: 24px;
+}
+
+.menu ul li {
+    height: 25px;
+    list-style: none;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+ul {
+    margin-bottom: 50px;
+}
+
+
+
+
+.cabecalho {
+    background-color: aquamarine;
+}
+
+.menu-exemplo {
+    background-color: cornflowerblue;
+}
+
+.secao-principal {
+    background-color: hotpink;
+}
+
+.aside {
+    background-color: orangered;
+}
+
+.rodape {
+    background-color: green;
+}
+
+
+.container-exemplo {
+    display: grid;
+    grid-template-areas: "cabecalho cabecalho cabecalho"
+    "menu-exemplo secao-principal aside"
+    "rodape rodape rodape";
+}
+
+.cabecalho {
+    grid-area: cabecalho;
+}
+
+.menu-exemplo {
+    grid-area: menu-exemplo;
+}
+
+.secao-principal {
+    grid-area: secao-principal;
+}
+
+.aside {
+    grid-area: aside;
+}
+
+.rodape {
+    grid-area: rodape;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid - O que é?</title>
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <section class="menu">
+            <h1>Navegação</h1>
+            <ul>
+                <li><a href="../01-grid-o-que-e-revisado/index.html"> 01 - Grid o que é?</a></li>
+                <li><a href="../02-propriedades-do-grid-revisado/index.html">02 - Propriedades do Grid</a></li>
+                <li><a href="../03-grid-ocupando-espacos-revisado/index.html">03 - Grid - Ocupando espaços</a></li>
+                <li><a href="../04-grid-area-revisado/index.html">04 - Grid area</a></li>
+                <li><a href="../05-grid-template-areas-revisado/index.html">05 - Grid template areas</a></li>
+                <li><a href="../06-grid-auto-fill-e-auto-fit-revisado/index.html">06 - Grid auto fill e auto fit</a></li>
+            </ul>
+        </section>
+
+        <div class="conteudo">
+            <h2>Grid - O que é?</h2>
+            <div class="explicacao">
+                <p>O grid (grade) é um sistema bidimensional baseado em grades. Ele serve para que possamos criar as sessões para o nosso layout.</p>
+
+                <figcaption>
+                    <img src="./src/img/grid-o-que-e.png" alt="Tabela representando o grid." title="Tabela representando o grid.">
+                </figcaption>
+                
+                <p>O grid também tem aplicações em containes, como e flex visto antes. Então, tem propriedades que serão aplicadas no pais e propriedades que serão aplicadas nos filhos.</p>
+                <p>O grid pode começar sendo escrito tanto como: display: grid ou display: inline-grid. A diferença que o display grid vai deixar tudo preenchendo o tamanho total do container e o inline-grid vai deixa-los do mesmo tamanho, usando como referência o maior item.</p>
+                <p>A segunda parte é definir o grid template, com isso vamos definir as linhas e colunas do grid. Usando o grid-template-columns vamos definir o tamanho das colunas, podemos passar o valor 'auto', com isso vamos dizer que queremos uma coluna com o tamanho auto ou passar esse valor 2x e vamos ter duas colunas com valor 'auto'. Também podeos passar valores como pixels e porcentagem.</p>
+                <p>Também temos o grid-template-rows que faz com que trabalhemos com as linhas. Os valores aplicados são postos em cada linha, se quisemos ter uma linha com 150px assim ficará. Caso queira mais linhas basta repetir o valor "grid-template-rows: 150px 150px;".</p>
+            </div>
+            
+            <div class="container-exemplo">
+                <div>Célula 1</div>
+                <div>Célula 2</div>
+                <div>Célula 3</div>
+                <div>Célula 4</div>
+                <div>Célula 5</div>
+                <div>Célula 6</div>
+                <div>Célula 7</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

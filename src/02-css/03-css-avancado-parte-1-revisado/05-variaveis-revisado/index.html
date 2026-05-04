@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variaveis</title>
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <section class="menu">
+            <h1>Navegação</h1>
+            <nav class="navegacao">
+                <ul>
+                    <li><a href="../01-pseudo-classes/index.html">Pseudo Classes</a></li>
+                    <li><a href="../02-pseudo-elementos/index.html">Pseudo Elementos</a></li>
+                    <li><a href="../03-seletores/index.html">Seletores</a></li>
+                    <li><a href="../4-transform/index.html">Aplicando transformações com transform</a></li>
+                    <li><a href="../5-variaveis/index.html">Trabalhando com Variáveis</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="conteudo">
+            <div>
+                <h1>Variaveis</h1>
+                <p>Nas variáveis temos que tomar cuidado com a compatibilidade com os navegadores (browsers)</p>
+                <p>As variáveis podem ter o escopo global ou local. A variável global pode ser utilizada em todo o
+                    documento e todos os estilos. E a variável local só vai pode ser utilizada no seletor que ela foi
+                    criada.</p>
+                <div>
+                    <h3>Global</h3>
+                    <p>Aqui queremos colocar uma cor para todos os textos, para isso usamos a variável ":root", que é a
+                        raiz do documento, podemos definir uma estilização para tudo aqui dentro. Para escrever uma
+                        variável escrevemos "--" antes de escrever o nome da variável "--cor-padrao: green;",
+                        "--tamanho-de-fonte-padrao: 20px;". </p>
+                    <p>":root {--cor-padrao: green; --tamanho-de-fonte-padrao: 20px;}"</p>
+
+                    <p>
+                        Para definir a variável nos itens do documento, primeiro colocamos o que vamos estilizar,
+                        seguido de var(*nome da variável padrão*).
+                    </p>
+                    <p>Para a variável de cor do texto usamos: "color: var(--cor-padrao, blue);" esse 'blue' é para
+                        dizer que, caso de algum problema na variável pode utilizar outra, 'blue'.</p>
+
+                    <p>Para a variável de tamanho da fonte usamos: "font-size: var(--tamanho-de-fonte-padrao, 20px);"
+                    </p>
+
+                    <p>Vantagens de usar variável global é que fica mais fácil de ler e alterar o código caso seja
+                        necessário.</p>
+                </div>
+
+                <div>
+                    <h3>Local</h3>
+                    <p>Para utilizar uma variável local, que só vai ser utilizada em um elemento, fazemos assim:</p>
+
+                    <p>Dentro do elemento que queremos usamos: "h2 {--cor-padrao: yellow; color: var(--cor-padrao, blue); background-color: var(--cor-padrao);}</p>
+
+                    <p>Note que não precisa mais do ":root" que é a raiz. Como aqui é o local não precisa de "root.</p>
+                </div>
+
+            </div>
+
+            <div>
+                <h2>Título 2</h2>
+                <h3>Título 3</h3>
+                <p>Texto do parágrafo</p>
+                <span>Texto do span</span>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

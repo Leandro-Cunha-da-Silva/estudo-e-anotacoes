@@ -1,0 +1,63 @@
+body {
+    padding-inline: 15px;
+    margin: 10px;
+}
+
+html {
+    font-size: 24px;
+}
+
+.navegacao ul li {
+    height: 25px;
+    list-style: none;
+}
+
+.navegacao a {
+    text-decoration: none;
+}
+
+ul {
+    margin-bottom: 50px;
+}
+
+
+
+/* Variável ":root".*/
+:root {
+    --cor-padrao: green;
+    --tamanho-de-fonte-padrao: 20px;
+}
+
+/* Para definir a variável...*/
+
+h2 {
+    /* para usar uma variável de forma "local", como aqui no exemplo, não precisamos colocar ":root", escreveremos a variável direta. O ":root" é o geral e não pode ser usado em um estilo local. */
+
+    --cor-padrao: yellow;
+
+    color: var(--cor-padrao, blue);
+    font-size: var(--tamanho-de-fonte-padrao, 20px);
+
+    background-color: var(--cor-padrao);
+}
+
+h3 {
+    color: var(--cor-padrao, blue);
+    font-size: var(--tamanho-de-fonte-padrao, 20px);
+}
+
+p {
+    color: var(--cor-padrao, blue);
+    font-size: var(--tamanho-de-fonte-padrao, 20px);
+}
+
+span {
+    color: var(--cor-padrao, blue);
+    font-size: var(--tamanho-de-fonte-padrao, 20px);
+}
+
+/* No exemplo dessa aula o uso repetido de código não tem problema já que se o projeto crescer demais então o uso como está no exemplo é bom porque o torna escalável. */
+
+
+
+/* Link da aula para mais estudo: https://www.w3schools.com/css/css3_variables.asp */

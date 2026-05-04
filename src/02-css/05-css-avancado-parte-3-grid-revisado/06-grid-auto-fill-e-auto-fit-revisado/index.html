@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid auto fill e auto fit</title>
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <section class="menu">
+            <h1>Navegação</h1>
+            <ul>
+                <li><a href="../01-grid-o-que-e-revisado/index.html"> 01 - Grid o que é?</a></li>
+                <li><a href="../02-propriedades-do-grid-revisado/index.html">02 - Propriedades do Grid</a></li>
+                <li><a href="../03-grid-ocupando-espacos-revisado/index.html">03 - Grid - Ocupando espaços</a></li>
+                <li><a href="../04-grid-area-revisado/index.html">04 - Grid area</a></li>
+                <li><a href="../05-grid-template-areas-revisado/index.html">05 - Grid template areas</a></li>
+                <li><a href="../06-grid-auto-fill-e-auto-fit-revisado/index.html">06 - Grid auto fill e auto fit</a></li>
+            </ul>
+        </section>
+
+        <section class="explicacao">
+            <div>
+                <h2>Grid auto-fill e auto-fit</h2>
+                <p>Usando o auto fill ou auto fit conseguimos deixar nossa página responsiva sem usar Media Queries.</p>
+                <p>A diferença entre elas são: o auto-fill trava nossa página de acordo com o valor que colocamos, como no exemplo, 200px. Se ainda tiver espaço sobrando ele cria espaços vazios, colunas invisiveis.</p>
+                <p>Auto-fill: grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));</p>
+                <br>
+                <p>Já o auto-fit vai estender as colunas para preencher todo o espaço da tela ou container.</p>
+                <p>Auto-fit: grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));</p>
+            </div>
+        </section>
+
+        <section class="conteudo">
+            <div class="item">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus distinctio impedit, eos non vel
+                    enim adipisci expedita, error illo debitis molestiae rerum voluptatum, odio soluta eaque velit
+                    deleniti quo deserunt!</p>
+            </div>
+
+            <div class="item">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus distinctio impedit, eos non vel
+                    enim adipisci expedita, error illo debitis molestiae rerum voluptatum, odio soluta eaque velit
+                    deleniti quo deserunt!</p>
+            </div>
+
+            <div class="item">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus distinctio impedit, eos non vel
+                    enim adipisci expedita, error illo debitis molestiae rerum voluptatum, odio soluta eaque velit
+                    deleniti quo deserunt!</p>
+            </div>
+
+            <div class="item">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus distinctio impedit, eos non vel
+                    enim adipisci expedita, error illo debitis molestiae rerum voluptatum, odio soluta eaque velit
+                    deleniti quo deserunt!</p>
+            </div>
+
+            <div class="item">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus distinctio impedit, eos non vel
+                    enim adipisci expedita, error illo debitis molestiae rerum voluptatum, odio soluta eaque velit
+                    deleniti quo deserunt!</p>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

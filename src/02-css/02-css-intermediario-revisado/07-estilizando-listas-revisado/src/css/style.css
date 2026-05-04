@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-inline: 15px;
+    margin: 10px;
+}
+
+.navegacao ul li {
+    height: 25px;
+    list-style: none;
+}
+
+.navegacao a {
+    text-decoration: none;
+}
+
+
+
+.lista-desordenada ul {
+    list-style-image: url('../img/checkbox-24.png');
+    background-color: orange;
+    list-style: square inside url('../img/checkbox-24.png');
+}
+
+.lista-desordenada ul li {
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.lista-ordenada ol {
+    list-style-image: url('../img/checkbox-24.png');
+    background-color: paleturquoise;
+    list-style: square inside url('../img/checkbox-24.png');
+}
+
+.lista-ordenada ol li {
+    border: 1px solid black;
+    padding: 20px;
+}

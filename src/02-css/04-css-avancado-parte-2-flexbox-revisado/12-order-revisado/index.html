@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container-menu">
+        <section class="menu">
+            <h1>Navegação</h1>
+            <ul>
+                <li><a href="../01-intro-flexbox-revisado/index.html">01-Introdução Flexbox</a></li>
+                <li><a href="../02-flex-direction-revisado/index.html">02-Flex Direction</a></li>
+                <li><a href="../03-justify-content-revisado/index.html">03-Justify Content</a></li>
+                <li><a href="../04-align-items-revisado/index.html">04-Align items</a></li>
+                <li><a href="../05-flex-wrap-e-flex-flow-revisado/index.html">05-Flex wrap e Flex flow</a></li>
+                <li><a href="../06-align-content-revisado/index.html">06-Align Content</a></li>
+                <li><a href="../07-gap-revisado/index.html">07-Gap</a></li>
+                <li><a href="../08-grow-revisado/index.html">08-Grow</a></li>
+                <li><a href="../09-basis-revisado/index.html">09-Basis</a></li>
+                <li><a href="../10-shrink-revisado/index.html">10-Shrink</a></li>
+                <li><a href="../11-flex-revisado/index.html">11-Flex</a></li>
+                <li><a href="../12-order-revisado/index.html">12-Order</a></li>
+                <li><a href="../13-align-self-revisado/index.html">13-Align Self</a></li>
+                <li><a href="../14-dicas-finais-revisado/index.html">14-Dicas finais</a></li>
+            </ul>
+        </section>
+
+        <section class="conteudo">
+            <h2>Order</h2>
+            <p>O order vai definir a ordem dos nossos flex items. Por padrão o sistema ler os itens de cima para baixo,
+                mas agora com o order podemos modificar isso dentro do container.</p>
+            <p>O valor padrão do order é 0.</p>
+            <p>O order não tem valor fixo pré definido se quiser, por acaso, por um valor 10 pode fazer. Se um elemento
+                possuir um valor maior, então ele ficará mais para a direita, se possuir um valor menor ficará a
+                esquerda.</p>
+            <div class="container">
+                <div class="flex order-3">1</div>
+                <div class="flex order-4">2</div>
+                <div class="flex order-1">3</div>
+                <div class="flex order-0">4</div>
+                <div class="flex order-2">5</div>
+            </div>
+
+            <div>
+                <h3>Código CSS</h3>
+                <p>.order-0 {
+                    order: 0;
+                    }
+                    <br>
+                    .order-1 {
+                    order: 1;
+                    }
+                    <br>
+                    .order-2 {
+                    order: 2;
+                    }
+                    <br>
+                    .order-3 {
+                    order: 3;
+                    }
+                    <br>
+                    .order-4 {
+                    order: 4;
+                    }</p>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

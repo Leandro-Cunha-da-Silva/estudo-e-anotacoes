@@ -1,0 +1,33 @@
+body {
+    margin: 15px;
+    padding: 10px;
+    background-color: black;
+    color: aliceblue;
+}
+
+.home {
+    width: 30%;
+}
+
+.navegacao {
+    margin: 5px;
+    padding: 10px;
+}
+
+.navegacao a {
+    display: block;
+    height: 40px;
+    text-decoration: none;
+}
+
+p img {
+    margin: 20px;
+}
+
+p {
+    margin: 20px;
+    padding: 10px;
+    border: solid 10px green;
+    background-color: aqua;
+    color: black;
+}

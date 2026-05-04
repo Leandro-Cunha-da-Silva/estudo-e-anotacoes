@@ -1,0 +1,19 @@
+body {
+    padding: 15px;
+    margin: 10px;
+}
+
+.navegacao {
+    margin: 5px;
+    padding: 10px;
+}
+
+.navegacao a {
+    display: block;
+    height: 25px;
+    text-decoration: none;
+}
+
+.tags-semanticas img {
+    width: 25%;
+}

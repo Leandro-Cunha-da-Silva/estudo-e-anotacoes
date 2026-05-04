@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe</title>
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <section class="menu">
+            <h1>Navegação</h1>
+            <nav class="navegacao">
+                <ul>
+                    <li><a href="../01-tag-picture-revisado/index.html">Imagens responsivas usando a Tag Picture</a></li>
+                    <li><a href="../02-favicon-revisado/index.html">Criando um ícone de Favicon</a></li>
+                    <li><a href="../03-caracteres-emojis-revisado/index.html">Caracteres especiais e Emojis</a></li>
+                    <li><a href="../04-audio-revisado/index.html">Adicionando áudio na página</a></li>
+                    <li><a href="../05-video-parte-1-revisado/index.html">Adicionando vídeos com a tag vídeo - Parte 1</a></li>
+                    <li><a href="../06-video-parte-2-revisado/index.html">Adicionando vídeos com a tag vídeo - Parte 2</a></li>
+                    <li><a href="../07-iframes-revisado/index.html">Iframes</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="conteudo">
+            <h1>Iframe</h1>
+            <div class="explicacao">
+                <h4>Iframe interno</h4>
+                <p>
+                    O 'iframe' é um quadro dentro do nosso projeto. Ele pode puxar tanto um página interna quanto externa. Primeiro vamos ver como puxar uma página interna para o nosso index, por exemplo.
+                </p>
+
+                <div class="imagens-iframe-interno">
+                    <figure>
+                        <img src="./src/img/01-iframe-01.png" alt="Iframe 01">
+                        <figcaption>Primeiro vamos criar uma página. No caso, criei um "sobre.html".</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="./src/img/01-iframe-02.png" alt="iframe 02">
+                        <figcaption>Essa página é um HTML normal com algumas informações.</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="./src/img/01-iframe-03.png" alt="iframe 03">
+                        <figcaption>Podemos colocar alguns atributos como por exemplo "frameborder" (para tirar ou colocar bordas), "width" (largura) e "height" (altura).</figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="iframe-interno">
+                <iframe src="./sobre.html" frameborder="0" width="300" height="200">
+
+                </iframe>
+            </div>
+
+            <div class="explicacao">
+                <h4>Iframe externo</h4>
+                <p>
+                    Para fazer um iframe externo, e aqui usaremos o Youtube, é da seguinte forma.
+                </p>
+
+                <div class="imagens-iframe-externo">
+                    <figure>
+                        <img src="./src/img/01-iframe-04.png" alt="Iframe externo">
+                        <figcaption>Abre o vídeo desejado e clica em "compartilhar".</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="./src/img/01-iframe-05.png" alt="Iframe externo">
+                        <figcaption>Depois clica em "incorporar".</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="./src/img/01-iframe-06.png" alt="Iframe externo">
+                        <figcaption>Na tela seguinte basta copiar o código e colar no projeto.</figcaption>
+                    </figure>
+                </div>
+
+                <p>
+                    O atributos "width" e "height" podemos estilizar pelo CSS se quiser. <br>
+                    O atributo "src" é o link do vídeo no Youtube. <br>
+                    O atributo "frameborder" é para tirar as bodas igual visto antes. <br>
+                    O atributo "allow" é específico do Youtube que vai dizer quais controles aparecem no nosso vídeo. Preciso pesquisar mais sobre isso.
+                    O atributo "allowfullscreen" é para mostrar o botão de full screen no vídeo, assim podemos ver em tela cheia se quiser.
+                </p>
+
+                <p>
+                    Feito isso, aqui está nosso vídeo.
+                </p>
+            </div>
+
+            <div class="iframe-externo">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/HHVFlOPmMBA"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+    </div>
+
+</body>
+
+</html>

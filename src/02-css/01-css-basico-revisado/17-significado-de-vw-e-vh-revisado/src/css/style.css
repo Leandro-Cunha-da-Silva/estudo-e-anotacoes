@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 15px;
+    padding: 10px;
+    background-color: black;
+    color: aliceblue;
+}
+
+.home {
+    width: 30%;
+}
+
+.navegacao {
+    margin: 5px;
+    padding: 10px;
+}
+
+.navegacao a {
+    display: block;
+    height: 40px;
+    text-decoration: none;
+}
+
+h2 {
+    margin: 10px;
+    padding: 15px;
+}
+
+.secao-01 {
+    background-color: aliceblue;
+    border-bottom: solid red;
+    width: 100%;
+
+    min-height: 100vh;
+}
+
+.secao-01 div {
+    background-color: brown;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 10px;
+}
+
+.secao-02 {
+    background-color: aqua;
+    border-bottom: solid red;
+
+    width: 100vw;
+    
+    height: 100vh;
+}

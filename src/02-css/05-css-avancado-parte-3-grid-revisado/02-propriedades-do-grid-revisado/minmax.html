@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min-max</title>
+
+    <link rel="stylesheet" href="./src/css/style-min.css">
+</head>
+<body>
+
+    <div class="explicacao">
+        <h1>Min-max</h1>
+        <h2>Display grid</h2>
+        <p>1- a primeira coluna com minimo de 100px e máximo de 800px.</p>
+        <p>2- a segunda e a terceira coluna (repeat) com minino de 100px e máximo de 300px.</p>
+        <p>3- a quarta coluna com auto no min e no max.</p>
+
+        <p>O código ficaria assim: grid-template-columns: minmax(100px, 800px) repeat(2, minmax(100px,300px)) minmax(auto, auto);</p>
+    </div>
+
+    <div class="container-exemplo-min">
+        <div>
+            <p>Ajusta o conteudo no minimo em 100px</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div>
+            <p>Ajusta o conteudo no máximo 200px</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </div>
+
+        <div>
+            <p>Ajusta o conteudo no minimo 200px</p>
+        </div>
+
+        <div>
+            <p>Máximo 1fr.</p>
+        </div>
+
+        <div>Célula 5</div>
+        <div>Célula 6</div>
+        <div>Célula 7</div>
+        <div>Célula 8</div>
+    </div>
+
+    <br><br>
+
+    <div class="voltar">
+        <a href="./index.html">Voltar</a>
+    </div>
+</body>
+</html>

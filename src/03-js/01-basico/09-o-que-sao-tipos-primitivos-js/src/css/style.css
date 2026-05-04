@@ -1,0 +1,25 @@
+body {
+    padding-inline: 15px;
+    margin: 10px;
+}
+
+html {
+    font-size: 20px;
+}
+
+.menu ul li {
+    height: 25px;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+ul {
+    margin-bottom: 50px;
+}
+
+.conteudo ul li {
+    display: block;
+    padding-inline-start: 20px;
+}

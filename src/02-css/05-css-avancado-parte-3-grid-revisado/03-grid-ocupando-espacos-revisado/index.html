@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid - Ocupando espaços</title>
+
+    <link rel="stylesheet" href="./src/css/resest.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <section class="menu">
+            <h1>Navegação</h1>
+            <ul>
+                <li><a href="../01-grid-o-que-e-revisado/index.html"> 01 - Grid o que é?</a></li>
+                <li><a href="../02-propriedades-do-grid-revisado/index.html">02 - Propriedades do Grid</a></li>
+                <li><a href="../03-grid-ocupando-espacos-revisado/index.html">03 - Grid - Ocupando espaços</a></li>
+                <li><a href="../04-grid-area-revisado/index.html">04 - Grid area</a></li>
+                <li><a href="../05-grid-template-areas-revisado/index.html">05 - Grid template areas</a></li>
+                <li><a href="../06-grid-auto-fill-e-auto-fit-revisado/index.html">06 - Grid auto fill e auto fit</a></li>
+            </ul>
+        </section>
+
+        <section class="conteudo">
+            <div>
+                <h2>Grid - ocupando espaços</h2>
+                <p>Para fazer com que nossos elementos ocupem espaços no grid, como visto na foto de exemplo da aula <a
+                        href="../01-grid-o-que-e/index.html">01 - Grid o que é?</a>precisamos entender como fazer isso.
+                </p>
+                .container-exemplo {
+                display: grid;
+                grid-template-columns: repeat(5, auto);
+                grid-template-rows: repeat(3, auto);
+                grid-gap: 15px;
+                }
+                <br>
+                .verde-claro {
+                grid-column: 1 / span 2;
+                grid-row: 1 / span 2;
+                }
+                <br>
+                .span {
+                grid-column: 1 / span 2;
+                }
+            </div>
+
+            <div class="container-exemplo">
+                <div class="verde-claro">1</div>
+                <div class="azul span">2</div>
+                <div class="rosa span">3</div>
+                <div class="laranja-escuro">4</div>
+                <div class="verde-forte">5</div>
+                <div class="marrom">6</div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

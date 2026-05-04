@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Direction</title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container-menu">
+        <section class="menu">
+            <h1>Navegação</h1>
+            <ul>
+                <li><a href="../01-intro-flexbox-revisado/index.html">01-Introdução Flexbox</a></li>
+                <li><a href="../02-flex-direction-revisado/index.html">02-Flex Direction</a></li>
+                <li><a href="../03-justify-content-revisado/index.html">03-Justify Content</a></li>
+                <li><a href="../04-align-items-revisado/index.html">04-Align items</a></li>
+                <li><a href="../05-flex-wrap-e-flex-flow-revisado/index.html">05-Flex wrap e Flex flow</a></li>
+                <li><a href="../06-align-content-revisado/index.html">06-Align Content</a></li>
+                <li><a href="../07-gap-revisado/index.html">07-Gap</a></li>
+                <li><a href="../08-grow-revisado/index.html">08-Grow</a></li>
+                <li><a href="../09-basis-revisado/index.html">09-Basis</a></li>
+                <li><a href="../10-shrink-revisado/index.html">10-Shrink</a></li>
+                <li><a href="../11-flex-revisado/index.html">11-Flex</a></li>
+                <li><a href="../12-order-revisado/index.html">12-Order</a></li>
+                <li><a href="../13-align-self-revisado/index.html">13-Align Self</a></li>
+                <li><a href="../14-dicas-finais-revisado/index.html">14-Dicas finais</a></li>
+            </ul>
+        </section>
+
+        <section class="conteudo">
+            <div>
+                <h2>Flex Direction</h2>
+                <p>Aqui vmaos ver um pouco sobre o flex (direção do flex) e seus principais valores.</p>
+                <p>Com o flex direction conseguimos mudar a direção e o eixo dos itens dentro do conteiner.</p>
+
+                <p><strong>IMPORTANTE!</strong> A gente PRECISA aplicar a proriedade "display" com o valor "flex" no conteiner pai de onde vamos querer aplicar os valores da flex-box.</p>
+            </div>
+
+            <div class="exemplos">
+                <h3>Exemplos:</h3>
+
+                <h3>Row</h3>
+                <p>Por padrão os elementos dentro da nossa box ficam um em baixo do outro, mas quando aplicamos o ".row {display: flex;}" eles ficam um ao lado do outro. Ao aplicar o "display: flex" o padrão desse display é "row" o que faz os elementos ficarem lado a lado (em linha).</p>
+                <div class="container row">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+
+                <h3>Row-reverse</h3>
+                <p>Quando aplicamos o row-reverse a gente muda a direção e o início do eixo. Por isso nossos elementos ficam ao contrário.</p>
+                <div class="container row-reverse">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+
+                <h3>Column</h3>
+                <p>Aplicando o ".column {display: flex; flex-direction: column;}" basicamente dizemos para colocar os elementos em coluna, ou seja, um embixo do outro.</p>
+                <div class="container column">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+
+                <h3>Column-reverse</h3>
+                <p>O column-reverse faz os elementos comecarem de baixo para cima. Tudo vai para baixo e a contagem também de baixo para cima, só inverte a ordem.</p>
+                <div class="container column-reverse">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

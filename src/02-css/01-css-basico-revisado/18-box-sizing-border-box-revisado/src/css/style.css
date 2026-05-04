@@ -1,0 +1,49 @@
+body {
+    margin: 15px;
+    padding: 10px;
+    background-color: black;
+    color: aliceblue;
+}
+
+.home {
+    width: 30%;
+}
+
+.navegacao {
+    margin: 5px;
+    padding: 10px;
+}
+
+.navegacao a {
+    display: block;
+    height: 40px;
+    text-decoration: none;
+}
+
+h3 {
+    margin: 10px;
+    padding: 15px;
+}
+
+.explicacao-exemplos {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+}
+
+.explicacao-exemplos div {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border: 10px solid green;
+}
+
+.com-border {
+    background-color: aquamarine;
+    color: black;
+    box-sizing: border-box;
+}
+
+.sem-border {
+    background-color: brown;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Text</title>
+
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <section class="home">
+            <h1>Navegação</h1>
+            <nav class="navegacao">
+                <ul>
+                    <li><a href="../01-input-text-revisado/index.html">01 - Input-text</a></li>
+                    <li><a href="../02-input-number-password-submit-revisado/index.html">02 - Inputs Number, Password e
+                            Submit</a></li>
+                    <li><a href="../03-checkbox-radio-revisado/index.html">03 - Checkbox Radio</a></li>
+                    <li><a href="../04-select-revisado/index.html">04 - Select</a></li>
+                    <li><a href="../05-text-area-revisado/index.html">05 - Text area</a></li>
+                    <li><a href="../06-button-revisado/index.html">06 - Button</a></li>
+                    <li><a href="../07-formulario-revisado/index.html">07 - Formulário</a></li>
+                    <li><a href="../08-tag-semanticas-parte-1-e-2-revisado/index.html">08 - Tags semânticas Partes 1 e 2</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="conteudo">
+            <h2>Anatomia do Input e Input Text</h2>
+            <p>
+                Para começar escrever uma tag de 'input' precisamos escrever primeiro "input" e logo em seguida dizer que tipo de input estamos fazendo como por exemplo (input type="text"). <br>
+                Também podemos dizer que tipo e texto será passando um atributo para ele, nome ou e-mail, por exemplo: (input type="text" name="nome" ou "name="e-mail""). <br>
+                Isso serve para facilitar o uso pelo usuário final ou até mesmo para quando enviar para o back-end sabermos o que está indo para lá. <br>
+                Dessa forma o servidor vai conseguir identifcar o que é cada coisa. <br>
+                Outro atributo que podemos colocar é o "value" que é o valor do campo, podemos definir um valor ou deixar em branco. Se por acaso colocarmos um valor aqui "value="desenvolvedor"" <br>isso irá aparecer no campo do texto dentro do input quando abrir a página ou apertar um F5, mas quando o usuário digitar o que ele quer e enviar isso para o back-end então o valor será sobrescrito. <br>
+                Outro atributo é o "id" que é o identificador desse campo, isso é importante para depois caso for criar um "label" para essa parte. <br>
+                Para ver essa aplicação <a href="../03-checkbox-radio/index.html">clique aqui</a>. <br>
+                Mais um atributo bastante importante é o "placeholder" que é o texto que aparece dentro do campo "input" informando para o usuário o que ele precisa por ali dentro como visto abaixo:
+            </p>
+            
+            <input type="text" name="nome" value="" id="nome" placeholder="Digite seu nome aqui">
+            <input type="text" name="email" value="" id="email" placeholder="Digite seu e-mail aqui">
+
+            <p>
+                Quando escrevemos o "input" por padrão isso é para texto mesmo que não definamos um "type" para ele, ele sempre será um texto.
+            </p>
+        </section>
+    </div>
+
+</body>
+
+</html>

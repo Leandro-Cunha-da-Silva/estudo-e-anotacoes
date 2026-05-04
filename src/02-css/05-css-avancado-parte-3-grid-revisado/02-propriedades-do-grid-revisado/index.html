@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedades do Grid</title>
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <section class="menu">
+            <h1>Navegação</h1>
+            <ul>
+                <li><a href="../01-grid-o-que-e-revisado/index.html"> 01 - Grid o que é?</a></li>
+                <li><a href="../02-propriedades-do-grid-revisado/index.html">02 - Propriedades do Grid</a></li>
+                <li><a href="../03-grid-ocupando-espacos-revisado/index.html">03 - Grid - Ocupando espaços</a></li>
+                <li><a href="../04-grid-area-revisado/index.html">04 - Grid area</a></li>
+                <li><a href="../05-grid-template-areas-revisado/index.html">05 - Grid template areas</a></li>
+                <li><a href="../06-grid-auto-fill-e-auto-fit-revisado/index.html">06 - Grid auto fill e auto fit</a></li>
+            </ul>
+        </section>
+
+        <section class="conteudo">
+            <div class="explicacao">
+                <h2>Propriedades do Grid</h2>
+                <h4>Grid-template: repeat</h4>
+                <p>A primeira que vamos falar é a 'repeat'. Imagina que temos muitas linhas no nosso grid e para isso vamos ter que colocar, para cada linha, seus respectivos tamanhos e isso é muito trabalho. Então para isso serve o repeat.</p>
+                <p>Para usar o repeat escrevemos assim: grid-template-rows: repeat(3, 150px);</p>
+                <p>Isso serve tanto para linhas, quanto para colunas: grid-template-columns: repeat(2, auto);</p>
+                <p>Podemos também abreviar esses valores em uma única linha de código, o que é bem melhor. Então ficaria assim: grid-template: repeat(3, 150px) / repeat(2, auto);</p>
+                <p>Note que o primeiro valor é a linha e depois as colunas. Precisa ser assim.</p>
+
+                <h4>Grid-gap:</h4>
+                <p>O Grid-gap vai ser o tamanho entre as colunas e as linhas.</p>
+                <p>Então se aplicarmos uma grid-gap: 10px; ele da um espaço de 10px entre todas as colunas e linhas.</p>
+                <p>Se quiser definir só um espaço entre colunas pode basta escrever: grid-column-gap: 10px;</p>
+                <p>E para por espaço somente entre as linhas: grid-row-gap: 10px;</p>
+                <p>Também podemos escrever de forma abreviada, que como sempre é melhor. Para isso vamos usar o grid-gap que vimos antes, agora com dois valores vamos colocar primeiro a linha e depois as colunas, assim: grid-gap: 10px 20px;</p>
+
+                <h4>grid-min-max:</h4>
+                <p>Essa propriedade é bem interessante, pois ela faz com que a gente defina um tamanho mínimo e máximo para as colunas ou linhas. Assim, se o container for maior que o tamanho máximo, ele não vai ultrapassar esse valor. E se for menor que o tamanho mínimo, ele não vai diminuir mais que esse valor.</p>
+                <p>Para ver essa <a href="./minmax.html">clique aqui.</a></p>
+            </div>
+
+            <div class="container-exemplo">
+                <div>Célula 1</div>
+                <div>Célula 2</div>
+                <div>Célula 3</div>
+                <div>Célula 4</div>
+                <div>Célula 5</div>
+                <div>Célula 6</div>
+                <div>Célula 7</div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

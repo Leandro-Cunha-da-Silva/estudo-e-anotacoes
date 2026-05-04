@@ -1,0 +1,102 @@
+body {
+    padding-inline: 15px;
+    margin: 10px;
+}
+
+html {
+    font-size: 24px;
+}
+
+.navegacao ul li {
+    height: 25px;
+    list-style: none;
+}
+
+.navegacao a {
+    text-decoration: none;
+}
+
+ul {
+    margin-bottom: 50px;
+}
+
+
+
+/* PARA ESTILIZAR UM ELEMENTO SEMPRE TEMOS QUE PUXAR O SEU SELETOR */
+h1 {
+    color: green;
+}
+
+
+/* PARA CHAMAR UMA CLASSE SEMPRE UTILIZAMOS O PONTO ".".
+QUALQUER ELEMENTO QUE TIVER A MESMA CLASSE SERÃO ESTILIZADOS DA MESMA FORMA.*/
+.paragrafo {
+    color: yellow;
+}
+
+
+/* OUTRO SELETOR É O ID QUE A GENTE PUXA USANDO '#' */
+#menu {
+    margin-left: 100px;
+}
+
+
+/* O PRÓXIMO É GERALMENTE UTILIZADO EM ESTILOS DE "RESET".
+ESSE ELEMENTO VAI MODIFICAR TODOS OS ELEMENTOS NA PÁGINA. */
+/* * {
+    padding: 0;
+    font-size: 20px;
+} */
+
+
+/* Duas classes. */
+.titulo.vermelho {
+    color: red;
+}
+
+.titulo.laranja {
+    color: orange;
+}
+
+
+/* ESTILIZAÇÃO SEPARADOS COM VIRGULA. */
+p, span {
+    font-size: 20px;
+}
+
+
+/* Estilização classe filha.*/
+.sobre .texto {
+    color: palevioletred;
+}
+
+
+
+/* ESTILIZANDO COM SINAL DE ">".*/
+/* div > p {
+    color: royalblue;
+} */
+
+
+
+/* TAMBÉM PODEMOS FAZER COM O SINAL DE "+" */
+div + p {
+    color: royalblue;
+}
+
+
+
+/* ESTILIZANDO PELO ATRIBUTO DO ELEMENTO. */
+a[target=_blank] {
+    color: red;
+}
+
+/* PODEMOS ESTILIZAR TAMBÉM COM TEXTO E NESSE CASO PRECISAMOS COLOCAR ASPAS DUPLAS.
+ */
+a[href="google.com"] {
+    color: green;
+}
+
+
+
+/* LINK PARA APROFUNDAR OS ESTUDOS: https://www.w3schools.com/cssref/css_selectors.php */

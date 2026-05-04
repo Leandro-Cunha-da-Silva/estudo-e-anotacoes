@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid template areas</title>
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <section class="menu">
+            <h1>Navegação</h1>
+            <ul>
+                <li><a href="../01-grid-o-que-e-revisado/index.html"> 01 - Grid o que é?</a></li>
+                <li><a href="../02-propriedades-do-grid-revisado/index.html">02 - Propriedades do Grid</a></li>
+                <li><a href="../03-grid-ocupando-espacos-revisado/index.html">03 - Grid - Ocupando espaços</a></li>
+                <li><a href="../04-grid-area-revisado/index.html">04 - Grid area</a></li>
+                <li><a href="../05-grid-template-areas-revisado/index.html">05 - Grid template areas</a></li>
+                <li><a href="../06-grid-auto-fill-e-auto-fit-revisado/index.html">06 - Grid auto fill e auto fit</a></li>
+            </ul>
+        </section>
+
+        <section class="conteudo">
+            <div class="explicacao">
+                <h2>Grid template area</h2>
+                <p>Para usar o grid area basta escrever os nomes das areas que queremos que ocupem determinados espaços na tela, seguindo uma ordem como no código abaixo. O container é aonde tudo vai ser posto e as divisões abaixo são as areas que queremos agrupar no container.</p>
+                <br>
+                <p>Código:</p>
+                <p>
+                    .container-exemplo { <br>
+                    display: grid; <br>
+                    grid-template-areas: "cabecalho cabecalho cabecalho"<br>
+                    "menu-exemplo secao-principal aside"<br>
+                    "rodape rodape rodape";<br>
+                    }
+                    <br>
+                    <br>
+                    .cabecalho {
+                    grid-area: cabecalho;
+                    }
+                    <br>
+                    .menu-exemplo {
+                    grid-area: menu-exemplo;
+                    }
+                    <br>
+                    .secao-principal {
+                    grid-area: secao-principal;
+                    }
+                    <br>
+                    .aside {
+                    grid-area: aside;
+                    }
+                    <br>
+                    .rodape {
+                    grid-area: rodape;
+                    }
+                </p>
+            </div>
+            <br><br>
+            <div class="container-exemplo">
+                <header class="cabecalho">Header</header>
+                <nav class="menu-exemplo">Navigation</nav>
+                <section class="secao-principal">
+                    <h4>Seção principal</h4>
+                </section>
+                <aside class="aside">aside</aside>
+                <footer class="rodape">Radapé</footer>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

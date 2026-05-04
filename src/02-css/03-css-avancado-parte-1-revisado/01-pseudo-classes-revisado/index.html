@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <section class="menu">
+            <h1>Navegação</h1>
+            <nav class="navegacao">
+                <ul>
+                    <li><a href="../01-pseudo-classes/index.html">Pseudo Classes</a></li>
+                    <li><a href="../02-pseudo-elementos/index.html">Pseudo Elementos</a></li>
+                    <li><a href="../03-seletores/index.html">Seletores</a></li>
+                    <li><a href="../4-transform/index.html">Aplicando transformações com transform</a></li>
+                    <li><a href="../5-variaveis/index.html">Trabalhando com Variáveis</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="conteudo">
+            <div class="explicacao">
+                <h1>Pseudo Classes</h1>
+                <div class="o-que-sao">
+                    <p>Pseudo classes são palavras que colocamos depois de um seletor separados por dois pontos ':'.
+                        Elas servem para estilizar estados dos seletores, outros elementos da página ou também fatores
+                        externos como por exemplo o histórico de navegação, usando o 'visited' que serve para estilizar
+                        um link que já foi visitado pelo usuário. Como visto em aulas anteriores <a href="#">aqui</a>.
+                    </p>
+                    <figure>
+                        <img src="./src/img/01-pseudo-classes-01.png" alt="Como estilizar pseudo classes">
+                        <figcaption>Para estilizar uma pseudo classe o esquema é esse.</figcaption>
+                    </figure>
+                    <p>
+                        Para aprofundamento das Pseudo classes acesse esse link:
+                        <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/Pseudo-classes" target="_blank"
+                            rel="noopener noreferrer">Mdn Web Docs</a>
+                    </p>
+                </div>
+
+                <h2>First Child</h2>
+                <div class="first">
+                    <p class="padrao">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    </p>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    </p>
+                </div>
+
+                <div class="img-first">
+                    <figure>
+                        <img src="./src/img/01-pseudo-classes-02.png" alt="First Child">
+                        <figcaption>Essa pseudo classe estiliza apenas a primeira filha de um elemento.</figcaption>
+                    </figure>
+                </div>
+
+
+                <h2>Last Child</h2>
+                <div>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    </p>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    </p>
+                </div>
+
+                <div class="img-last">
+                    <figure>
+                        <img src="./src/img/01-pseudo-classes-03.png" alt="Last Child">
+                        <figcaption>Essa pseudo classe estiliza apenas a última filha de um elemento.</figcaption>
+                    </figure>
+                </div>
+
+
+                <h2>NOT Child</h2>
+                <ul>
+                    <li>item 1</li>
+                    <li>item 2</li>
+                    <li>item 3</li>
+                    <li>item 4</li>
+                    <li>item 5</li>
+                    <li>item 6</li>
+                </ul>
+
+                <div class="img-not-child">
+                    <figure>
+                        <img src="./src/img/01-pseudo-classes-04.png" alt="Classe de negação">
+                        <p>Essa pseudo classe é de negação. Serve para estilizar os elementos que não tem uma classe padrão.</p>
+                        Por exemplo, se no meu HTML tiver algum elemento "class:padrao" então essa classe será negada e as outras receberão a estilização aplicada.
+                    </figure>
+                </div>
+
+
+                <h2>NTH Child</h2>
+                <ul>
+                    <li>item 1</li>
+                    <li>item 2</li>
+                    <li>item 3</li>
+                    <li>item 4</li>
+                    <li>item 5</li>
+                    <li>item 6</li>
+                </ul>
+
+                <div class="nth-child">
+                    <p>Essa pseudo classe vai selecionar elementos a partir da posição deles em um grupo de elementos irmãos.</p>
+                    <p>Dentro dessa pseudo classe podemos passar alguns argumentos que já são definidos, como por exemplo o "odd" que vão ser todos os elementos ímpares desses irmãos.</p>
+
+                    <div class="img-nth-child">
+                        <figure>
+                            <img src="./src/img/01-pseudo-classes-05.png" alt="nth Child odd e even">
+                        </figure>
+
+                        <figure>
+                            <img src="./src/img/01-pseudo-classes-06.png" alt="nth Child 2em2, 3em3">
+                            <figcaption>Temos essa forma de estilo também.</figcaption>
+                        </figure>
+
+                        <figure>
+                            <img src="./src/img/01-pseudo-classes-07.png" alt="nth Child do último para o primeiro">
+                            <figcaption>Outra forma de estilo é vindo do último para o primeiro.</figcaption>
+                        </figure>
+                    </div>
+                </div>
+
+
+                <h2>Only Child</h2>
+                <p>Essa pseudo Classe estiliza um elemento que não tenha elementos irmãos. Exemplo se tenho duas div, mas uma delas tem apenas 1 filho e  na outra tem dois filhos, essa pseudo classe vai estilizar apenas a primeira div porque ela tem apenas um filho.</p>
+                <div>
+                    <p>
+                        Div com apenas um parágrafo.
+                    </p>
+                </div>
+
+                <div>
+                    <p>
+                        Div com dois parágrafos.
+                    </p>
+
+                    <p>
+                        Div com dois parágrafos.
+                </div>
+
+                <div class="img-only-child">
+                    <picture>
+                        <img src="./src/img/01-pseudo-classes-08.png" alt="Pseudo classe Only">
+                    </picture>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

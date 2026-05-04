@@ -1,0 +1,42 @@
+body {
+    margin: 15px;
+    padding: 10px;
+    background-color: black;
+    color: aliceblue;
+}
+
+.home {
+    width: 30%;
+}
+
+.navegacao {
+    margin: 5px;
+    padding: 10px;
+}
+
+.navegacao a {
+    display: block;
+    height: 40px;
+    text-decoration: none;
+}
+
+h3 {
+    margin: 10px;
+    padding: 15px;
+}
+
+.exemplo {
+    background-color: #ccc;
+    font-size: 32px;
+    width: 50%;
+}
+
+.pai {
+    background-color: #ea80fc;
+    width: 50%;
+}
+
+.filha {
+    background-color: #1de9b6;
+    width: 50%;
+}

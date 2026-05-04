@@ -1,0 +1,80 @@
+body {
+    padding-inline: 15px;
+    margin: 10px;
+}
+
+html {
+    font-size: 24px;
+}
+
+.navegacao ul li {
+    height: 25px;
+    list-style: none;
+}
+
+.navegacao a {
+    text-decoration: none;
+}
+
+ul {
+    margin-bottom: 50px;
+}
+
+
+/* ESQUEMA PARA ESTILIZAR */
+
+/* seletor: pseudo-classe {
+    propriedade: valor;
+} */
+
+/* PSEUDO CLASSES */
+/* p:first-child {
+    color: green;
+} */
+
+/* p:last-child {
+    color: blue;
+} */
+
+/* PSEUDO CLASSE DE NEGAÇÃO - ESSA CLASSE VAI MUDAR QUALQUER 
+ELEMENTENTO QUE NÃO TENHA ".padrao".*/
+/* p:not(.padrao) {
+    color: yellow;
+} */
+
+/* ESSA PSEUDO CLASSE VAI ESTILIZAR ELEMENTOS IMPARES E PARES.
+SENDO "ODD" IMPAR E "EVEN" PAR. */
+/* li:nth-child(odd) {
+    color: red;
+} */
+
+
+/* AINDA NESSA PESEUDO CLASSE PODEMOS COLOCAR OUTROS VALORES COMO:
+"2N OU 3N" QUE ESTILIZA DE 2 EM 2 OU 3 EM 3 OS NÚMEROS DA LISTA.
+PODE COLOCAR APENAS UM NÚMERO PARA MUDAR UMA POSIÇÃO ESPECIFICA NA LISTA COMO "2", "5".
+PARA ESTILIZAR UM GRUPO MAIOR COMO POR EXEMPLO DO 2 AO 5 USAMOS DA SEGUINTE FORMA:
+
+li:nth-child(n+2) :nth-child(-n+5) */
+
+/* li:nth-child(odd) {
+    color: red;
+} */
+
+
+
+/* OUTRA FORMA DE ESTILIZAR USANDO UMA VARIAÇÃO DESSE PESEUDO ELEMENTO É.
+NO EXEMPLO A SEGUIR ELE ESTILIZA DE BAIXO PARA CIMA. */
+
+/* li:nth-last-child(1) {
+    color: red;
+} */
+
+
+/* PARA ESTILIZAR SOMENTE UM ELEMENTO DENTRO DE UMA TAG 
+UTILIZA-SE A SEGUINTE PSEUDO CLASSE: ONLY
+ESSA ESTILIZA APENAS O FILHO UNICO DE CADA TAG PAI.
+SE POR ACASO TIVER MAIS DE UMA TAG FILHO EM ALGUMA TAG PAI ENTÃO NADA MUDARÁ. */
+
+p:only-child {
+    color: burlywood;
+}

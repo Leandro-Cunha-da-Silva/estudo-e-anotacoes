@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <section class="home">
+            <h1>Navegação</h1>
+            <nav class="navegacao">
+                <ul>
+                    <li><a href="../01-input-text-revisado/index.html">01 - Input-text</a></li>
+                    <li><a href="../02-input-number-password-submit-revisado/index.html">02 - Inputs Number, Password e
+                            Submit</a></li>
+                    <li><a href="../03-checkbox-radio-revisado/index.html">03 - Checkbox Radio</a></li>
+                    <li><a href="../04-select-revisado/index.html">04 - Select</a></li>
+                    <li><a href="../05-text-area-revisado/index.html">05 - Textarea</a></li>
+                    <li><a href="../06-button-revisado/index.html">06 - Button</a></li>
+                    <li><a href="../07-formulario-revisado/index.html">07 - Formulário</a></li>
+                    <li><a href="../08-tag-semanticas-parte-1-e-2-revisado/index.html">08 - Tags semânticas Partes 1 e 2</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="conteudo">
+            <h1>Formulário</h1>
+            <p>
+                Os formulários tem dois tipos de envios diferentes o GET e o POST.
+            </p>
+
+            <h3>Formulário com GET</h3>
+            <p>
+                Primeiro veremos o GET e para escrever isso faremos assim: <br>
+                (< form method="GET" action="index.html"> <br>
+                    < input type="text" name="q" value=""> <br>
+                    < input type="submit" value="Enviar"> <br>
+                </ form>) <br>
+                O atributo "action" vai dizer para nosso formulário para onde queremos enviar os dados preenchidos. <br>
+                Normalmente esse atributo joga os dados para um back-end para tratamento deles e salvamento ou alguma outra sessão.
+            </p>
+            <p>
+                O GET vai passar as informações que a gente colocar por parametro na URL igual o Google faz, por exemplo. <br>
+                Na URL do google (ttps://www.google.com/search? <strong>q=netflix</strong>&sca_esv=f1fd60fc7b0159d6&sca_upv=) <br>
+                Esse "q=netflix" é o GET que o Google pega como parametro quando fazemos alguma pesquisa.
+            </p>
+
+            <p>
+                Nosso pequeno formulário aqui em baixo:
+            </p>
+            <form method="GET" action="index.html">
+                <input type="text" name="q" value="">
+                <input type="submit" value="Enviar">
+            </form>
+
+            <h3>Formulário com Post</h3>
+            <p>
+                Agora veremos o POST: o post normalmente é mais utilizado para quando queremos fazer algo mais seguro <br>
+                como por exemplo fazer um login, onde o usuário vai colocar sua senha.
+            </p>
+            <p>
+                Para escrever isso faremos assim: <br>
+                (< form method="POST" action="index.html"> <br>
+                    < input type="text" name="q"> <br>
+                    < input type="submit" value="Enviar"> <br>
+                    </ form>)
+            </p>
+            <p>
+                Podemos trocar o "index.html" para um "index.php" que receberia esses dados de forma muito mais segura, <br>
+                salvaria em um bando de dados e também faria a verificação se aquele usuário está cadastrado no sistema e permitir esse login.
+            </p>
+
+            <form method="POST" action="index.html">
+                <input type="text" name="q">
+                <input type="submit" value="Enviar">
+            </form>
+
+
+            <h3>Formulário de login no Facebook</h3>
+            <p>
+                Abaixo veremos um formulário de login no Facebook como exemplo da aula: <br>
+                No dia que faço essa revisão de estudos não fiz o CSS desse formulário, quando eu aprender fazer isso volto aqui e deixo essa parte bonita. <br>
+                (18/09/2024)
+            </p>
+            <p>
+                Para ver o código desse formulário tem que acessar o Git Hub.
+            </p>
+
+            <p>
+                No formulário test vamos usar o (method="GET") apenas para fins didáticos para ver os dados na <br>nossa URL local para estudo e pode olhar que tudo esta sendo passado conforme preenchimento do formulário. <br>
+                Se usar o POST ele vai da uma mensagem de erro quando preencher tudo e enviar já que não temos uma pagina para nosso formulário test.
+            </p>
+
+            <h3>Facebook Login</h3>
+            <form method="GET" action="index.html" enctype="multipart/form-data">
+                <input type="text" name="nome" id="nome" placeholder="Nome">
+                <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" required>
+                <br><br>
+
+                <input type="text" name="celular-ou-email" id="celular-ou-email" placeholder="Celular ou Email">
+
+                <input type="password" name="senha" id="senha" placeholder="Senha">
+                <br><br>
+
+                <label for="">Data de nascimento</label>
+                <select name="dia" id="">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+
+                <select name="mes" id="">
+                    <option value="Jan">Jan</option>
+                    <option value="Fev">Fev</option>
+                    <option value="Mar">Mar</option>
+                    <option value="Abr">Abr</option>
+                    <option value="Mai">Mai</option>
+                </select>
+
+                <select name="ano" id="">
+                    <option value="1999">1999</option>
+                    <option value="2000">2000</option>
+                    <option value="2001">2001</option>
+                    <option value="2002">2002</option>
+                    <option value="2003">2003</option>
+                </select>
+                <br><br>
+
+                <label>Gênero</label>
+                <br>
+
+                <label for="feminino">Feminino</label>
+                <input type="radio" name="genero" id="feminino" value="feminino">
+                <br>
+
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="genero" id="masculino" value="masculino">
+                <br>
+
+                <label for="personalizado">Personalizado</label>
+                <input type="radio" name="genero" id="personalizado" value="personalizado">
+                <br><br>
+
+                <input type="file">
+                <br><br>
+
+                <input type="submit" value="Enviar">
+            </form>
+
+            <p>
+                Aqui no final colocamos um extra que é o (< input type="file">) que serve para enviar arquivos do nosso computador para o servido de cadastro. <br>
+                No nosso caso Facebook Test. <br>
+                Mas para que isso funcione devemos colocar o atributo (enctype="multipart/form-data") no nosso forumlário, assim: <br>
+                (< form method="GET" action="index.html" <strong>enctype="multipart/form-data"></strong> < /form>) <br>
+                O "enc" é o nome para 'encode' que é como esses dados serão tratados quando forem enviados para o servidor back-end. <br>
+                E o ("multipart/form-data") é para informar que nosso arquivo é uma imagem. Se não colocaramos isso então nosso botão de 'file' <br>
+                não vai servir para nada porque não vai funcionar.
+            </p>
+            <p>
+                Outro atributo que podemos colocar em nosso formulário, em cada campo de preenchimento, é o "required". <br>
+                Esse atributo é para informar que alguns campos são obrigatórios, caso o usuário tente enviar sem preencher algum campo <br>
+                vai da erro e o usuário precisa voltar para preencher tudo ou apenas o que é necessário. <br>
+                Esse é um método do próprio HTML, ajuda bastante, mas para fazer um mais bonito e melhor estilizado podemos usar o javascript <a href="#">clique aqui para ver como fazer isso mais bonito</a>.
+            </p>
+        </section>
+    </div>
+</body>
+
+</html>

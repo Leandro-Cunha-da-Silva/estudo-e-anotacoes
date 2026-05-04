@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justify Content</title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container-menu">
+        <section class="menu">
+            <h1>Navegação</h1>
+            <ul>
+                <li><a href="../01-intro-flexbox-revisado/index.html">01-Introdução Flexbox</a></li>
+                <li><a href="../02-flex-direction-revisado/index.html">02-Flex Direction</a></li>
+                <li><a href="../03-justify-content-revisado/index.html">03-Justify Content</a></li>
+                <li><a href="../04-align-items-revisado/index.html">04-Align items</a></li>
+                <li><a href="../05-flex-wrap-e-flex-flow-revisado/index.html">05-Flex wrap e Flex flow</a></li>
+                <li><a href="../06-align-content-revisado/index.html">06-Align Content</a></li>
+                <li><a href="../07-gap-revisado/index.html">07-Gap</a></li>
+                <li><a href="../08-grow-revisado/index.html">08-Grow</a></li>
+                <li><a href="../09-basis-revisado/index.html">09-Basis</a></li>
+                <li><a href="../10-shrink-revisado/index.html">10-Shrink</a></li>
+                <li><a href="../11-flex-revisado/index.html">11-Flex</a></li>
+                <li><a href="../12-order-revisado/index.html">12-Order</a></li>
+                <li><a href="../13-align-self-revisado/index.html">13-Align Self</a></li>
+                <li><a href="../14-dicas-finais-revisado/index.html">14-Dicas finais</a></li>
+            </ul>
+        </section>
+
+        <section class="conteudo">
+            <div>
+                <h2>Justify Content</h2>
+                <p>Vamos ver o comportamento de cada valor de acordo com as regras do "flex-direction", já que é o responsável por mudar o eixo do container flex.</p>
+                <p><strong>IMPORTANTE!</strong>O justify-content também é uma propriedade de flex container, isso que dizer que devemos aplicar no pai para que os filhos sejam alinhados de acordo com os valores definidos.</p>
+            </div>
+
+            <div>
+                <h2>Flex-start</h2>
+                <p>O flex-end se move ao longo de eixo principal e o valor do flex stard alinha os itens no inicio ao longo do eixo principal que por padrão, nesse caso, é horizontal Isso acorreu porque a direção do flex foi definida como "row".</p>
+                <p>Se a gente mudar a direção dos eixos aplicando um "flex-direction: column;" ai o eixo principal passa a ser horizontal. Então o "justify-content: flex-start;" vai alinhar os itens no inicio ao longo do eixo principal, nesse caso, na vertical.</p>
+                <div class="container flex-start">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+
+                <h2>Flex-end</h2>
+                <p>O flex-end é o oposto do flex-start, ela vai alinhar os itens no final do eixo principal.</p>
+                <div class="container flex-end">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+
+                <h2>Center</h2>
+                <p>Esse é um valor muito utilizado. Ele alinha um item no centro e ao longo do eixo principal.</p>
+                <div class="container center">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+
+                <h2>Space-between</h2>
+                <p>O space-between da espaço entre os elementos, ele vai distribuir os itens de acordo com o espaço disponível no container ao longo do eixo principal.</p>
+                <div class="container space-between">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+
+                <h2>Space-around</h2>
+                <p>O "space-around" é quase igual ao 'Space-between', aqui ele da espaço entres os elementos e o espaço dentro do container. Os espaços do itens são iguais, mas o espaço nas bordas do container não.</p>
+                <div class="container space-around">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+
+                <h2>Space-evenly</h2>
+                <p>O "space-evenly" da um espaço igual entre os itens e o container, é quase igual aos anteriores mas aqui o espaçamento é igual em tudo.</p>
+                <div class="container space-evenly">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

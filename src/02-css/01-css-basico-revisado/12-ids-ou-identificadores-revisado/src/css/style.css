@@ -1,0 +1,35 @@
+body {
+    margin: 15px;
+    padding: 10px;
+    background-color: black;
+    color: aliceblue;
+}
+
+.home {
+    width: 30%;
+}
+
+.navegacao {
+    margin: 5px;
+    padding: 10px;
+}
+
+.navegacao a {
+    display: block;
+    height: 40px;
+    text-decoration: none;
+}
+
+h3 {
+    margin: 10px;
+    padding: 10px;
+}
+
+#descricao-ps5 {
+    background-color: aqua;
+    color: black;
+}
+
+#descricao-pc {
+    background-color: blue;
+}

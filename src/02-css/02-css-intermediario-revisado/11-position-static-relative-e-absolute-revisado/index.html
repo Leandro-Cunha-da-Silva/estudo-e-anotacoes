@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Static, Relative e Absolute</title>
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <section class="menu">
+            <h1>Navegação</h1>
+            <nav class="navegacao">
+                <ul>
+                    <li><a href="../01-especificidade-efeito-cascata-revisado/index.html">01 - Especificidade e efeito
+                            cascata</a></li>
+                    <li><a href="../02-estilos-de-texto-revisado/index.html">02 - Estilos de texto</a></li>
+                    <li><a href="../03-propriedades-fontes-revisado/index.html">03 - Propriedades das fontes</a></li>
+                    <li><a href="../04-usando-google-fonts-revisado/index.html">04 - Usando fontes do Google Fonts</a></li>
+                    <li><a href="../05-usando-fontes-que-nao-existem-no-google-fonts-revisado/index.html">05 - Usando fontes que
+                            não existem no Google Fonts</a></li>
+                    <li><a href="../06-estilizando-links-revisado/index.html">06 - Estilizando links</a></li>
+                    <li><a href="../07-estilizando-listas-revisado/index.html">07 - Estilizando listas</a></li>
+                    <li><a href="../08-estilizando-backgrounds-revisado/index.html">08 - Estilizando backgrounds</a></li>
+                    <li><a href="../09-posicionamento-display-revisado/index.html">09 - Posicionamento com display</a></li>
+                    <li><a href="../10-linkando-arquivos-css-corretamente-e-usando-background-image-revisado/index.html">10 -
+                            Linkando arquivos CSS corretamente e usando background-image</a></li>
+                    <li><a href="../11-position-static-relative-e-absolute-revisado/index.html">11 - Position Static, relative e
+                            Absolute</a></li>
+                    <li><a href="../12-position-fixed-revisado/index.html">12 - Position fixed</a></li>
+                    <li><a href="../13-introducao-a-responsividade-revisado/index.html">13 - Introdução à responsividade</a></li>
+                    <li><a href="../14-media-queries-revisado/index.html">14 - Media queries</a></li>
+                    <li><a href="../15-float-revisado/index.html">15 - Float</a></li>
+                    <li><a href="../16-centralizando-elementos-revisado/index.html">16 - Centralizando elementos</a></li>
+                    <li><a href="../17-adicionando-e-customizando-icones-com-o-font-awesome-revisado/index.html">17 - Adicionando
+                            e customizando ícones com o Font Awesome</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="conteudo">
+            <div class="texto">
+                <h2>Estatic</h2>
+                <p>Um elemento static sempre ficará fixo na página, mesmo que coloquemos valores para reposicionar, ele não irá funcinar nesse tipo de elemento, ele ficará travado porque esse é o comportamento padrão.</p>
+            </div>
+            <div class="elemento elemento-estatico">
+                <p>Static</p>
+            </div>
+
+
+
+            <div class="texto">
+                <h2>Relative</h2>
+                <p>Essa propriedade de elemento 'relative' vai dizer que esse elemento vai esta posicionado relativamente ao lugar que ele foi criado na nossa tela. Ele está logo abaixo do elemento Static porque o static é um "display: block;" então ele ocupa a linha toda e o único lugar que o relative pode ficar é em baixo.</p>
+                <p>Agora com esse elemento, se a gente quiser reposicionar ele, podemos fazer. Se usarmos um "left: 100px;" ele ficará um pouco para o lado direito 100 pixels. Quando usamos o left (esquerda) o elemento é empurado para a direita. Isso acontece porque estamos dizendo que queremos um espaço entre a borda esquerda e o elemento, por isso ele vai para direita.</p>
+                <p>Agora sim podemos mover o elemento para onde quisermos. Lembrando que quando usamos algum comando não estamos querendo mover o elemento e sim da um espaçamento entre o elemento e as bordas dele. Por isso ele se move ao contrario do que pedimos como o caso do "left".</p>
+            </div>
+            <div class="elemento elemento-relativo">
+                <p>Relative</p>
+            </div>
+            
+
+
+            <div class="texto">
+                <h2>Absolute</h2>
+                <p>Quando colocamos um elemento com o "position: absolute;" estamos dizendo que estamos destacando esse elemento da camanda padrão/original dele.</p>
+                <p>Com o esquema de camadas, quando colocamos o "position: absolute;" estamos criando uma camada nova e qualquer elemento que esteja abaixo disso vai subir e ficar atrás do 'absolute'. Logo abaixo desse elemento temos outro elemento mas ele está atrás. se colocarmos, por exemplo um "left: 200px;" veremos o elemento que está atrás.</p>
+            </div>
+            <div class="elemento elemento-absoluto">
+                <p>Absolute</p>
+            </div>
+
+            <div class="elemento elemento-estatico">
+                <p>Outro elemento Estatico</p>
+            </div>
+
+
+
+            <div class="texto">
+                <h2>Absolute com pai</h2>
+                <p>
+                    Existe uma maneira de deixar esse elemento no lugar onde ele foi criado. Da seguinte forma. Vamos colocar o elemento com position absolute dentro de um elemento que tenha o position relative.
+                    Criaremos uma div dentro da outra (div pai / div filho) assim o Absolute ficará dentro dela.
+                </p>
+                <p>Lembre sempre, toda que você quiser criar um elemento com absolute você <strong>deve</strong> criar um elemento com position relative para deixar o abosulte ali dentro e evitar que ele fique solto na tela movendo para todo canto.</p>
+            </div>
+            <div class="elemento elemento-relativo-com-filho">
+                <div class="elemento elemento-absoluto-com-pai">
+                    <p>Elemento absolute com pai</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+
+</html>

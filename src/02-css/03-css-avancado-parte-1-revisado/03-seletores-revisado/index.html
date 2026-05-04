@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores</title>
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <section class="menu">
+            <h1>Navegação</h1>
+            <nav class="navegacao">
+                <ul>
+                    <li><a href="../01-pseudo-classes/index.html">Pseudo Classes</a></li>
+                    <li><a href="../02-pseudo-elementos/index.html">Pseudo Elementos</a></li>
+                    <li><a href="../03-seletores/index.html">Seletores</a></li>
+                    <li><a href="../4-transform/index.html">Aplicando transformações com transform</a></li>
+                    <li><a href="../5-variaveis/index.html">Trabalhando com Variáveis</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="conteudo">
+            <h1>Seletores</h1>
+
+            <div>
+                <h2>*Estilização com Seletor*</h2>
+
+                <p>Existem várias formas de estilizar um seletor, uma delas é puxando a própria tag como (h1, h2...,
+                    div, section, nav, html, etc.).</p>
+                <p>
+                    Outra meneira de fazer isso é chamando a classe, que sempre puxamos ela no CSS usando o ponto (.),
+                    seguido do nome da classe. Ex.: ".classe".
+                </p>
+                <p>
+                    Também temos o ID que chamamos no CSS usando o "#". O ID só vem 1 vez por página, não pode ter outro
+                    ID com o mesmo nome na mesma página.
+                </p>
+            </div>
+
+            <br><br><br>
+
+            <nav>
+                <h2>*Estilização com ID*</h2>
+                <p>Outro seletor é o ID que a gente puxa usando o '#'.</p>
+                <p>O ID não é recomendado para fazer estilização, recomenda-se usar as classes 'class'. ID é bom para
+                    intereções com JS (JavaScript).</p>
+                <ul id="menu">
+                    <li>Sobre</li>
+                    <li>Contatos</li>
+                    <li>Projetos</li>
+                </ul>
+            </nav>
+
+            <div class="ponto">
+                <h2>Asteristico (*)</h2>
+                
+                <p>O (*) para estilizar é mais usado em Resests para modificar a página toda. Colocando isso no arquivo
+                    CSS faz com que todos os elementos da página tenham as mesmas especificações.</p>
+                <p>Ex.: se colocar um "* {padding: 0; font-size: 20px;}" isso vai deixar toda minha pagina com esses valores.</p>
+            </div>
+
+            <br>
+
+            <div>
+                <h2>*Estilização com duas classes*</h2>
+                <p>Podemos utilizar duas classes no mesmo elemento. A primeira classe será a base para caso queira que todas elas tenham o mesmo estilo como por exemplo mesmo tamanho de fonte. Então, como todas tem a classe "titulo" (h3 class="titulo vermelho") basta escrever o código com esse elemento e colocar o "font-size:" e o tamanho desejado.</p>
+                <p>Para colocar as duas classes escrevemos ".ELEMENTO1.ELEMENTO2", veja que não colocamos espaços entre os dois pontos é tudo junto mesmo.</p>
+
+                <h3 class="titulo vermelho">Título 1 com duas classes</h3>
+                <h3 class="titulo laranja">Título 2 com duas classes</h3>
+            </div>
+
+            <br>
+
+            <div>
+                <h2>*Estilização com Vírgula*</h2>
+                <p>
+                    Podemos também utilizar a estilização separadas por vírgula, assim todos os elementos separados por
+                    vírgula terão a mesma estilização.
+                </p>
+                <span>
+                    "p, span {font-size: 20px;}"
+                </span>
+            </div>
+
+            <br>
+
+            <div>
+                <h2>*Estilização com classe filha*</h2>
+                <section class="sobre">
+                    <p class="texto">
+                        Para estilizar uma classe filha, a gente precisa separar os pontos com espaço. Ex.: ".classe1 .classe2".
+                    </p>
+                    ".sobre .texto {color: palevioletred;}"
+                </section>
+            </div>
+
+            <br>
+
+            <div>
+                <h2>*Estilização com seletor sinal de maior '>' *</h2>
+                <p>
+                    Estilizando com sinal de maior '>' a gente consegue nexer em todos os elementos filhos.
+                </p>
+                <p>"div > p {color: royalblue;}"</p>
+            </div>
+
+            <br>
+
+            <h2>*Estilização com seletor '+'' *</h2>
+            <div>
+                <p>Para estilizar usando o sinal de '+' a gente precisa colocar os elementos separados. Ex.: se eu quero estilizar uma tag 'p', ela não pode ser filha de nenhuma outra, ela precisa está separada, fora de outra tag. Lembre da hierarquia (tags pais e filhas).</p>
+            </div>
+            <p>
+                Usando esse tipo de estilização com o sinal de '+' eu consigo estilizar a primeira tag 'p' que estiver fora de qualquer outra tag. Somente a primeira tag 'p' que estiver fora de qualquer outra tag será estilizada, se houver mais de uma tag 'p', somente a primeira será estilizada.
+            </p>
+
+            <br>
+
+            <div>
+                <h2>*Estilização com atributo*</h2>
+                <p>Para estilizar dessa forma podemos chamar o "target" e precisamos escrever:"a[target=_blank] {color: red;}". </p>
+                <a href="#" target="_blank">Clique aqui</a>
+
+                <br> <br>
+
+                <p>Também podemos chamar pelo "href" e nesse caso precisamos colocar aspas duplas no link/nome que está dentro do "href": "a[href="google.com"] {color: green;}"</p>
+                <a href="google.com">Clique aqui</a>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

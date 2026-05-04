@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <section class="menu">
+            <h1>Navegação</h1>
+            <nav class="navegacao">
+                <ul>
+                    <li><a href="../01-pseudo-classes/index.html">Pseudo Classes</a></li>
+                    <li><a href="../02-pseudo-elementos/index.html">Pseudo Elementos</a></li>
+                    <li><a href="../03-seletores/index.html">Seletores</a></li>
+                    <li><a href="../4-transform/index.html">Aplicando transformações com transform</a></li>
+                    <li><a href="../5-variaveis/index.html">Trabalhando com Variáveis</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="conteudo">
+            <h1>Transform</h1>
+            <p>Com o transform a gente pode aplicar transformações nos elementos HTML. Vejamos algumas:</p>
+
+            <br><br>
+            <div>
+                <h2>Transform Scale</h2>
+                <p>No scale a gente muda a escala dos elementos (comprimento e largura) as medidas são menores já que os valores são calculados em 2x. Exemplo: 2, 3. São 2 vezes e 3 vezes, respectivamente.</p>
+                <p>Também podemos usar esse comando como ScaleY (vertical) ou ScaleX (horizontal) e aqui usamos apenas um parametro de medida e não dois como no exemplo anterior.</p>
+                <p>"img.scale {transform: scale(2, 3);}"</p>
+
+                <br><br><br><br><br><br><br><br>
+
+                <img class="scale" src="./src/img/cafe.jpeg" alt="café">
+            </div>
+
+            <br><br><br><br><br><br><br>
+
+            <div>
+                <h2>Transform Rotate</h2>
+                <p>Outros usos do transform como o Rotate. Com essa função a gente rotaciona o elemento. 
+                Aqui colocamos as medidas em "graus" como no exemplo 45deg (45graus)</p>
+                <p>"img.rotate {transform: rotate(45deg);}"</p>
+                <br><br>
+                <img class="rotate" src="./src/img/cafe.jpeg" alt="café">
+            </div>
+
+
+            <br><br><br><br>
+
+            <div>
+                <h2>Transform Translate</h2>
+                <p>Outros usos do transform como o Translate. Com essa função a gente move o elemento.
+                Aqui usamos as medidas em pixels.</p>
+                <p>"img.translate {transform: translate(50px, 20px);}"</p>
+
+            <img class="translate" src="./src/img/cafe.jpeg" alt="café">
+            </div>
+        </section>
+        
+        <br><br><br><br><br>
+
+        <section>
+            <footer>
+                <a href="https://www.w3schools.com/cssref/css3_pr_transform.php" target="_blank" rel="noopener noreferrer">Link de apoio</a>
+            </footer>
+        </section>
+    </div>
+</body>
+
+</html>

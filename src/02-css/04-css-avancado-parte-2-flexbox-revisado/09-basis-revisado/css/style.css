@@ -1,0 +1,65 @@
+body {
+    padding-inline: 15px;
+    margin: 10px;
+}
+
+html {
+    font-size: 24px;
+}
+
+.menu ul li {
+    height: 25px;
+    list-style: none;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+ul {
+    margin-bottom: 50px;
+}
+
+
+
+
+.container {
+    width: 500px;
+    height: 100px;
+
+    border: 2px solid #000;
+    margin: 20px;
+}
+
+.container div {
+    background-color: red;
+    margin: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+.container {
+    display: flex;
+}
+
+.grow-0 {
+    flex-grow: 0;
+}
+
+.grow-1 {
+    flex-grow: 1;
+}
+
+.grow-2 {
+    flex-grow: 2;
+}
+
+.grow-3 {
+    flex-grow: 3;
+}
+
+.basis-100 {
+    flex-basis: 100px;
+}

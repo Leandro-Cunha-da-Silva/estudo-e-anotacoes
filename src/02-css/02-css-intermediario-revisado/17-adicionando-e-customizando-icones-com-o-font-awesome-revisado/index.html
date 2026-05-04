@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionando e customizando ícones com o Font Awesome</title>
+
+    <!-- IMPORTADO COM CDN -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+
+    <!-- IMPORTADO COM PASTA -->
+    <link rel="stylesheet" href="./src/css/font-awesome.css">
+
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <section class="menu">
+            <h1>Navegação</h1>
+            <nav class="navegacao">
+                <ul>
+                    <li><a href="../01-especificidade-efeito-cascata-revisado/index.html">01 - Especificidade e efeito
+                            cascata</a></li>
+                    <li><a href="../02-estilos-de-texto-revisado/index.html">02 - Estilos de texto</a></li>
+                    <li><a href="../03-propriedades-fontes-revisado/index.html">03 - Propriedades das fontes</a></li>
+                    <li><a href="../04-usando-google-fonts-revisado/index.html">04 - Usando fontes do Google Fonts</a></li>
+                    <li><a href="../05-usando-fontes-que-nao-existem-no-google-fonts-revisado/index.html">05 - Usando fontes que
+                            não existem no Google Fonts</a></li>
+                    <li><a href="../06-estilizando-links-revisado/index.html">06 - Estilizando links</a></li>
+                    <li><a href="../07-estilizando-listas-revisado/index.html">07 - Estilizando listas</a></li>
+                    <li><a href="../08-estilizando-backgrounds-revisado/index.html">08 - Estilizando backgrounds</a></li>
+                    <li><a href="../09-posicionamento-display-revisado/index.html">09 - Posicionamento com display</a></li>
+                    <li><a href="../10-linkando-arquivos-css-corretamente-e-usando-background-image-revisado/index.html">10 -
+                            Linkando arquivos CSS corretamente e usando background-image</a></li>
+                    <li><a href="../11-position-static-relative-e-absolute-revisado/index.html">11 - Position Static, relative e
+                            Absolute</a></li>
+                    <li><a href="../12-position-fixed-revisado/index.html">12 - Position fixed</a></li>
+                    <li><a href="../13-introducao-a-responsividade-revisado/index.html">13 - Introdução à responsividade</a></li>
+                    <li><a href="../14-media-queries-revisado/index.html">14 - Media queries</a></li>
+                    <li><a href="../15-float-revisado/index.html">15 - Float</a></li>
+                    <li><a href="../16-centralizando-elementos-revisado/index.html">16 - Centralizando elementos</a></li>
+                    <li><a href="../17-adicionando-e-customizando-icones-com-o-font-awesome-revisado/index.html">17 - Adicionando
+                            e customizando ícones com o Font Awesome</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="conteudo">
+            <h1>Adicionando e customizando ícones com o Font Awesome</h1>
+
+            <div class="explicacao-importando-com-links">
+                <p>Para utilizar os ícones do Font Awesome tem duas formas. A primeira é importando os ícones através de
+                    links.</p>
+                <p>Um dos links vai no 'head' do HTML e outro vai no final do 'body' por ser tratar de um JS (JavaScript).
+                </p>
+                <p>Para pegarmos esses links vamos acessar esse site:</p>
+                <div class="links">
+                    <ul>
+                        <li><a href="https://cdnjs.com/libraries/font-awesome/5.15.4" target="_blank"
+                                rel="noopener noreferrer">CDNJS</a></li>
+                    </ul>
+                </div>
+                <p>No link acima vamos procurar pelos links final "all.min.css" e "all.min.js". Depois de achar, só copiar e colar aqui.</p>
+
+                <div class="imagem">
+                    <figure>
+                        <img src="./src/img/17-font-awesome-01.png" alt="Link no head">
+                        <figcaption>Link no head.</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="./src/img/17-font-awesome-02.png" alt="Link no final do body">
+                        <figcaption>Link no final do body.</figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="link-copiados">
+                <p>Depois de fazer isso vamos usar o link do Site Font Awesome</p>
+                <ul>
+                    <li><a href="https://fontawesome.com/v5/search" target="_blank"
+                        rel="noopener noreferrer">Clique aqui</a></li>
+                </ul>
+                <p>Nesse link vamos procurar o que queremos, aqui no exemplo pesquisamos o ícone do facebook</p>
+
+                <div class="imagem-link">
+                    <figure>
+                        <img src="./src/img/17-font-awesome-03.png" alt="Copinado o ícone do facebook">
+                    </figure>
+                </div>
+
+                <p>Basta copiar o "i class="fab fa-facebook" e colar no seu projeto, somente fazendo isso já vai funcionar. Depois podemos aumentar o tamanho e trocar a cor a vontade.</p>
+                <p>Abaixo só coloquei dois para exemplo:</p>
+
+                <div class="imagem-exemplo-css">
+                    <figure>
+                        <img src="./src/img/17-font-awesome-04.png" alt="Exemplo de estilo no CSS">
+                    </figure>
+                </div>
+
+                <div class="icones-web">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-facebook"></i>
+                </div>
+            </div>
+
+            <div class="exportando-com-pasta">
+                <h3>A segunda forma de pegarmos os ícones que queremos para nosso projeto é assim:</h3>
+                <p>Precisamos ir ao font awesome de novo:</p>
+                <div class="link">
+                    <ul>
+                        <li><a href="https://fontawesome.com/v5/search" rel="noopener noreferrer" target="_blank">Font Awesome</a></li>
+                    </ul>
+                </div>
+                <p>Depois de entrar no site temos que seguir o seguintes passos:</p>
+
+                <div class="img">
+                    <figure>
+                        <img src="./src/img/17-font-awesome-pasta-05.png" alt="Font Awesome pasta 05">
+                        <figcaption>Clica em "Start"</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="./src/img/17-font-awesome-pasta-06.png" alt="Font Awesome pasta 06">
+                        <figcaption>Vai em "Download"</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="./src/img/17-font-awesome-pasta-07.png" alt="Font Awesome pasta 07">
+                        <figcaption>Troca a versão para 5, depois vai em "Free For Web" para baixar o arquivo.</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="./src/img/17-font-awesome-pasta-08.png" alt="Font Awesome pasta 08">
+                        <figcaption>Depois que baixar o arquivo e extrair o zip, entra na página e vai em "css".</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="./src/img/17-font-awesome-pasta-09.png" alt="Font Awesome pasta 09">
+                        <figcaption>Dentro da pasta busca por "all.min.css" que é a versão menor do arquivo. A versão "all.css" é maior e consome mais dados, então melhor pegar a menor.</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="./src/img/17-font-awesome-pasta-10.png" alt="Font Awesome pasta 10">
+                        <figcaption>Copiado o arquivo, vamos lá na pasta que estamos trabalhando nosso projeto e vamos entrar em "src" - "css" e vamos colar o arquivo aqui dentro do CSS. Aqui podemos renomar o arquivo sem problemas, no caso vamos por "font-awesome.css"</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="./src/img/17-font-awesome-pasta-11.png" alt="Font Awesome pasta 11">
+                        <figcaption>Depois disso temos que pegar a pasta "webfonts" do nosso arquivo baixado e zipado. Precisamos dessa pasta porque sem ela não vai funcionar quando quisermos puxar os ícones.</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="./src/img/17-font-awesome-pasta-12.png" alt="Font Awesome pasta 12">
+                        <figcaption>Quando copiado a pasta vamos colar ela dentro do "src". A outra foi dentro do CSS e essa PRECISA ser dentro do SRC apenas.</figcaption>
+                    </figure>
+
+                    <p>Depois de feito esse processo já podemos colocar os ícones no nosos projeto.</p>
+                </div>
+
+                <div class="icones-pasta">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-facebook"></i>
+                </div>
+
+                <div class="img-exemplo">
+                    <figure>
+                        <img src="./src/img/17-font-awesome-pasta-13.png" alt="Font Awesome pasta 13">
+                    </figure>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"
+        integrity="sha512-Tn2m0TIpgVyTzzvmxLNuqbSJH3JP8jm+Cy3hvHrW7ndTDcJ1w5mBiksqDBb8GpE2ksktFvDB/ykZ0mDpsZj20w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+</body>
+
+</html>

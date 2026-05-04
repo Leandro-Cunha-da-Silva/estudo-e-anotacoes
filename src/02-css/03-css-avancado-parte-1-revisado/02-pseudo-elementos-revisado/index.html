@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elemento</title>
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <section class="menu">
+            <h1>Navegação</h1>
+            <nav class="navegacao">
+                <ul>
+                    <li><a href="../01-pseudo-classes/index.html">Pseudo Classes</a></li>
+                    <li><a href="../02-pseudo-elementos/index.html">Pseudo Elementos</a></li>
+                    <li><a href="../03-seletores/index.html">Seletores</a></li>
+                    <li><a href="../4-transform/index.html">Aplicando transformações com transform</a></li>
+                    <li><a href="../5-variaveis/index.html">Trabalhando com Variáveis</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="conteudo">
+            <div class="explicacao">
+                <h1>Explicação e exemplos:</h1>
+                <div class="texto">
+                    <h3>Pseudo Elemento</h3>
+                    <p class="first-letter">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p class="first-line">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores atque nulla architecto expedita dolores. Atque nisi libero temporibus excepturi itaque quisquam perferendis aspernatur, sequi, obcaecati sunt corporis eum, rem consequatur!</p>
+
+                    <div>
+                        <figure>
+                            <img src="./src/img/01-pseudo-elementos-01.png" alt="Pseudo Elemento" title="Pseudo Classe">
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="lista">
+                    <h3>Estilizando listas:</h3>
+                    <p>Para estilizar uma lista fazemos assim:</p>
+                    <figure>
+                        <img src="./src/img/01-pseudo-elementos-02.png" alt="Listas" title="Listas">
+                    </figure>
+                    <ul>
+                        <li>Item 1</li>
+                        <li>Item 2</li>
+                        <li>Item 3</li>
+                        <li>Item 4</li>
+                    </ul>
+                </div>
+
+                <div class="before">
+                    <h3>Usando Before:</h3>
+                    <p>Before vai inserir um conteúdo antes do elemento que estamos estilizando.</p>
+                    <p>Por exemplo, se queremos colocar um determinada imagem antes de cada H2 na nossa página, temos a opção de por ela repditas vezes no HTML, o que é rui já que vai carregar a mesma imagem na frente de cada H2. Agora, usando o 'before' no CSS usamos uma única imgem que vai aparecer na frente de cada H2 como desejado sem pesar a nossa página.</p>
+
+                    <figure>
+                        <img src="./src/img/01-pseudo-elementos-03.png" alt="Usando Before" title="Usando Before">
+                    </figure>
+
+                    <h2>Ateliê Delmondes com Before</h2>
+                    <h2>Ateliê Delmondes com Before</h2>
+                    <h2>Ateliê Delmondes com Before</h2>
+                </div>
+
+                <div class="after">
+                    <h3>Usando o After:</h3>
+                    <p>O after serve para colocar um conteúdo depois do elemento do seletor que a gente especificar.</p>
+
+                    <figure>
+                        <img src="./src/img/01-pseudo-elementos-04.png" alt="Usando o after" title="Usando o after">
+                    </figure>
+
+                    <h2>Ateliê Delmondes com after</h2>
+                    <h2>Ateliê Delmondes com after</h2>
+                    <h2>Ateliê Delmondes com after</h2>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+
+</html>
