@@ -1,0 +1,21 @@
+body {
+    margin: 15px;
+    padding: 10px;
+    background-color: #25272A;
+    color: #E3E7E9;
+}
+.home {
+    width: 30%;
+}
+
+.navegacao {
+    margin: 5px;
+    padding: 10px;
+}
+
+.navegacao a {
+    display: block;
+    height: 40px;
+    text-decoration: none;
+    color: #E3E7E9;
+}

@@ -1,16 +1,27 @@
 body {
-    padding-inline: 15px;
-    margin: 10px;
-    background-color: #e1e2e1;
+    margin: 15px;
+    padding: 10px;
+    background-color: #25272A;
+    color: #E3E7E9;
+}
+.home {
+    width: 30%;
 }
 
-.navegacao ul li {
-    height: 25px;
-    list-style: none;
+.navegacao {
+    margin: 5px;
+    padding: 10px;
 }
 
 .navegacao a {
+    display: block;
+    height: 40px;
     text-decoration: none;
+    color: #E3E7E9;
+}
+
+p {
+    color: black;
 }
 
 html {

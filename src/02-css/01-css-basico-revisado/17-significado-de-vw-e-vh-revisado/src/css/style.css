@@ -1,16 +1,9 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     margin: 15px;
     padding: 10px;
-    background-color: black;
-    color: aliceblue;
+    background-color: #25272A;
+    color: #E3E7E9;
 }
-
 .home {
     width: 30%;
 }
@@ -24,6 +17,7 @@ body {
     display: block;
     height: 40px;
     text-decoration: none;
+    color: #E3E7E9;
 }
 
 h2 {

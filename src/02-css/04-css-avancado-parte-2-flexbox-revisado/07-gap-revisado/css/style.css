@@ -1,6 +1,8 @@
 body {
     padding-inline: 15px;
     margin: 10px;
+    background-color: #25272A;
+    color: #E3E7E9;
 }
 
 html {
@@ -12,10 +14,16 @@ html {
     list-style: none;
 }
 
-.menu a {
-    text-decoration: none;
+.menu ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
+.menu a {
+    text-decoration: none;
+    color: #E3E7E9;
+}
 ul {
     margin-bottom: 50px;
 }
