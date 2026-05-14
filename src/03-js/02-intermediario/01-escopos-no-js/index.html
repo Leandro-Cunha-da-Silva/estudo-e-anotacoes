@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Escopos no JavaScript</title>
+
+    <link rel="stylesheet" href="../00-css-js-inter/style.css">
+    <link rel="stylesheet" href="../00-css-js-inter/reset.css">
 </head>
 <body>
     <div class="container">
-        <nav class="menu">
+        <nav class="menu navegacao">
             <h2>Navegação</h2>
             <ul>
                 <li><a href="../01-escopos-no-js/index.html">01 - Escopos no JS</a></li>
@@ -38,6 +41,116 @@
                 <li><a href="../26-exercicio-06/index.html">26 - Exercício 06</a></li>
             </ul>
         </nav>
+
+        <div class="conteudo">
+            <h1>Escopos no JS:</h1>
+            <p>Quando criamos uma variável podemos acessar ela sempre que quisermos, mas ela fica limitada ao escopo onde foi criada. Exemplo: se escrevermos o código</p>
+            
+            <pre>
+                const mensagem = 'Olá'
+
+                console.log(mensagem);
+            </pre>
+            <figure>
+                <img src="./src/img/escopo-01.png" alt="escopo-01" title="escopo-01">
+            </figure>
+            <p>Fazendo isso o console imprime corretamente, mas se fizer dentro de um 'if':</p>
+            
+            <pre>
+                if(true){
+                    const mensagem = 'Olá'
+                }
+
+                console.log(mensagem);
+            </pre>
+            <figure>
+                <img src="./src/img/escopo-02.png" alt="escopo-02" title="escopo-02">
+            </figure>
+            
+            <p>Aqui o console da erro, porque o bloco de código 'if' cria um escopo para a variável mensagem e por isso essa variável só pode ser acessada dentro desse bloco. Assim:</p>
+
+            <pre>
+                if(true){
+                    const mensagem = 'Olá'
+
+                    console.log(mensagem)
+                }
+            </pre>
+            <figure>
+                <img src="./src/img/escopo-03.png" alt="escopo-03" title="escopo-03">
+            </figure>
+
+            <h3>Tipos de escopo:</h3>
+
+            <p>Blocos de códigos, criam um escopo para variáveis criadas com const e let. O que vimos antes. 👆</p>
+            <p>Blocos de códigos autonômos, para criar precisamos apenas começar abrindo e fechando as chaves '{}', feito isso tudo que for posto ali dentro serão os blocos de códigos autonômos. Este não cria um escopo para a variável 'var', se fizer isso o console imprime mesmo assim.</p>
+            <pre>
+                {
+                    var mensagem = 'Olá'
+                    console.log(mensagem);
+                    
+                }
+
+                console.log(mensagem);
+            </pre>
+
+            <figure>
+                <img src="./src/img/escopo-04.png" alt="escopo-04" title="escopo-04">
+            </figure>
+
+            <p>Escopo de Função, define um escopo para as variáveis const, let e var. Usando o código:</p>
+            <pre>
+                function falar(){
+                    var mensagem = 'Olá Mundo!'
+                    console.log(mensagem);
+                }
+
+                falar()
+                console.log(mensagem)
+            </pre>
+            <figure>
+                <img src="./src/img/escopo-05.png" alt="escopo-05" title="escopo-05">
+            </figure>
+
+            <p>Veja que usando a 'function' o console imprime apenas o que está dentro do escopo dele, o que é chamado fora da erro. Isso aocntece tanto para o var, let e const. Inclusive uma function fica presa dentro dela mesma, vejamos:</p>
+            <pre>
+                function falar(){
+                    const mensagem = 'Olá Mundo!'
+                    console.log(mensagem)
+
+                    function falarOutraCoisa(){
+                        
+                    }
+                    falarOutraCoisa()
+                    console.log(falarOutraCoisa)
+                }
+
+                falar()
+                console.log(falarOutraCoisa);
+            </pre>
+            <figure>
+                <img src="./src/img/escopo-06.png" alt="escopo-06" title="escopo-06">
+            </figure>
+
+            <p>Escopo Global: é o escopo mais externo de todos e ele vai acessível de qualquer outro escopo, tanto o local quanto o de função e etc.</p>
+            <p>Essa variével é posta logo acima do script do js em nosso index.html, se colocar em baixo do JS vai da erro.</p>
+            <figure>
+                <img src="./src/img/escopo-07.png" alt="escopo-07" title="escopo-07">
+                <img src="./src/img/escopo-08.png" alt="escopo-08" title="escopo-08">
+            </figure>
+            <p>Dessa forma quando chamamos a variável no JS usando o console, vai ser impresso: "console.log(url);"</p>
+            <p>Uma variável global pode ser posta tanto no script no index.html tanto no JS, é só colocar a variável fora de tudo.</p>
+            <figure>
+                <img src="./src/img/escopo-09.png" alt="escopo-09" title="escopo-09">
+            </figure>
+        </div>
     </div>
+
+    <script>
+        let url = 'https://www.youtube.com/@leandrodev.n1'
+    </script>
+
+    <script src="./src/js/index.js"></script>
+
 </body>
 </html>

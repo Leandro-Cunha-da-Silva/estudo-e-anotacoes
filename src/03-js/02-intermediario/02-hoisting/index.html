@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hoisting</title>
+
+    <link rel="stylesheet" href="../00-css-js-inter/reset.css">
+    <link rel="stylesheet" href="../00-css-js-inter/style.css">
 </head>
 <body>
     <div class="container">
-        <nav class="menu">
+        <nav class="menu navegacao">
             <h2>Navegação</h2>
             <ul>
                 <li><a href="../01-escopos-no-js/index.html">01 - Escopos no JS</a></li>
@@ -38,6 +41,46 @@
                 <li><a href="../26-exercicio-06/index.html">26 - Exercício 06</a></li>
             </ul>
         </nav>
+
+        <div class="conteudo">
+            <h1>Hoisting:</h1>
+            <p>O interpretador do JS faz várias operações nos bastidores e uma delas é o Hoisting, que no português seria algo como içamento. Esse é um comportamento que acontece por de 'baixo dos panos' no JS e se não tiver ciência dele pode acabar gerando confusão e dando erros no nosso código.</p>
+            <p>A melhor maneira de pensar no comportamento das variáveis do JS é separar isso em duas partes. Uma parte é a declaração da variável e a outra é a inicilização ou atribuição da variável.</p>
+            <p>Quando fazemos:</p>
+
+            <figure>
+                <img src="./src/img/hoisting-01.png" alt="hoisting-01">
+            </figure>
+            <p>Como na foto podemos colocar isso em duas linhas ou escrever tudo em uma linha só, mas o JS sempre ler como sendo duas instruções separadas, como está na primeira parte. Sabemos que cada variável declarada dentro de um escopo, pertence a esse escopo, mas o que devemos saber é que não importa aonde essas variáveis são declaradas dentro de um escopo, todas as declarações de variáveis são movidas para o topo desse escopo, seja global ou local. Isso é chamado de Hoisting (içamento) porque as declarações da variáveis são içadas para o topo do escopo. </p>
+            <p>O Hoisting só move a declaração das variáveis, ele não move a atribuição essa fica aonde foi atribuída. <strong>Lembrando que as variáveis não são movidas fisicamente, isso é apenas o modelo que descreve o que JS usa nos bastidores para ler isso.</strong></p>
+            <figure>
+                <img src="./src/img/hoisting-02.png" alt="hoisting-02" title="hoisting-02">
+            </figure>
+            <p>Se chamar o console antes da atribuição vai da "undefined".</p>
+
+            <p>Vamos ver agora como isso funciona com o a variável 'let':</p>
+            <p>Quando fazemos isso com a variável let da erro de referência, isso ocorre porque as variáveis let, diferentes das declaradas com var, não podem ser lidas ou escritas até que tenham sido totalmente inicializadas e elas são totalmente inicializadas aonde elas são declaradas.</p>
+            <pre>
+                console.log(pais);
+
+                let pais = 'Brasil'
+            </pre>
+            <figure>
+                <img src="./src/img/hoisting-03.png" alt="hoisting-03" title="hoisting-03">
+            </figure>
+
+            <p>Se fizer a declaração, chamar o console e depois fizer a atribuição aí da o "undefined".</p>
+
+            <pre>
+                let pais
+
+                console.log(pais);
+
+                pais = 'Brasil'
+            </pre>
+        </div>
     </div>
+
+    <script src="./src/js/index.js"></script>
 </body>
 </html>
