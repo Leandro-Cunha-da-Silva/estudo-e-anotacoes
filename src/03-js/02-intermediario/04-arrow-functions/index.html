@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arrow functions</title>
+
+    <link rel="stylesheet" href="../00-css-js-inter/reset.css">
+    <link rel="stylesheet" href="../00-css-js-inter/style.css">
 </head>
 <body>
     <div class="container">
-        <nav class="menu">
+        <nav class="menu navegacao">
             <h2>Navegação</h2>
             <ul>
                 <li><a href="../01-escopos-no-js/index.html">01 - Escopos no JS</a></li>
@@ -38,6 +41,47 @@
                 <li><a href="../26-exercicio-06/index.html">26 - Exercício 06</a></li>
             </ul>
         </nav>
+
+        <div class="conteudo">
+            <h1>Arrow Functions:</h1>
+            <p>Também são funções anônimas, elas não terão um nome epecífico. Essas são funcções terão a escrita reduzida e podemos fazer assim:</p>
+            <p>Usaremos o código da aula anterior como exemplo.</p>
+            <pre>
+                let resultadoDaSoma = function(numero1, numero2){
+                    return numero1 + numero2
+                }
+
+                console.log(resultadoDaSoma(12, 5));
+            </pre>
+            <p>Simplificando isso com arrow fica assim:</p>
+            <p>Aqui tiramos a 'function' e colocamos a ' => ' antre os parênteses e as chaves.</p>
+            <pre>
+                let resultadoDaSoma = (numero1, numero2) => {
+                    return numero1 + numero2
+                }
+
+                console.log(resultadoDaSoma(12, 5));
+            </pre>
+            <p>Se a função não receber parâmetros, que no caso são, "(numero1, numero2)", podemos simplificar mais ainda. Aqui vamos usar o seguinte código com apenas um parâmetro:</p>
+            <p>Caso queira colocar os parênteses em '(nomeQuester)' não tem problema, vai funcionar da mesma forma, porém quanto menos coisa escrever melhor e ainda tendo apenas 1 parâmetro não tem necessidade de parênteses.</p>
+            <pre>
+                const incentivarQuester = nomeQuester => {
+                    console.log('Parabens ' + nomeQuester + ', você chegou ao JS Inter.');
+                    
+                }
+
+                incentivarQuester('Leandro')
+            </pre>
+
+            <p>E da para simplificar ainda mais, se o código tiver apenas uma linha na sua na usa execução para para retirar as chaves '{}' e o 'return'.</p>
+            <pre>
+                let resultadoDaSoma = (numero1, numero2) => numero1 + numero2
+
+                console.log(resultadoDaSoma(12, 5));
+            </pre>
+        </div>
     </div>
+
+    <script src="./src/js/index.js"></script>
 </body>
 </html>

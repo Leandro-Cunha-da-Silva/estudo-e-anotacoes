@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Higher order functions</title>
+
+    <link rel="stylesheet" href="../00-css-js-inter/reset.css">
+    <link rel="stylesheet" href="../00-css-js-inter/style.css">
 </head>
 <body>
     <div class="container">
-        <nav class="menu">
+        <nav class="menu navegacao">
             <h2>Navegação</h2>
             <ul>
                 <li><a href="../01-escopos-no-js/index.html">01 - Escopos no JS</a></li>
@@ -38,6 +41,46 @@
                 <li><a href="../26-exercicio-06/index.html">26 - Exercício 06</a></li>
             </ul>
         </nav>
+
+        <div class="conteudo">
+            <h1>Higher order functions:</h1>
+            <p>Significa, funções de ordem superior, são funções que recebem outras funções como parâmetro ou retornam outras funções. Então podemos enviar uma função como parâmentro para outra função e também retornar alguma coisa dentro da dessa função a gente pode retornar uma função também ao invés de retornar uma variável, um número ou uma string, por exemplo.</p>
+            <pre>
+                const calcularAnoDeNascimento = function (idade, mesDeNascimento, imprimir){
+                    const mesAtual = 5
+                    let anoDeNascimento = 2026 - idade
+                    if(mesDeNascimento > mesAtual) anoDeNascimento--
+
+                    imprimir(anoDeNascimento)
+                }
+
+                let imprimirAnoDeNascimento = anoDeNascimento => {
+                    console.log('Seu ano de nascimento é: ' + anoDeNascimento);
+                    
+                }
+
+                calcularAnoDeNascimento(31, 3, imprimirAnoDeNascimento)
+            </pre>
+
+            <p>Agora uma função que retorna uma função:</p>
+            <pre>
+                function multiplicar(multiplicador){
+                    return function(numero){
+                        return numero * multiplicador
+                    }
+                }
+
+                let dobrar = multiplicar(2)
+                let triplicar = multiplicar(3)
+                let quadruplicar = multiplicar(4)
+
+                console.log(dobrar(2));
+                console.log(triplicar(3));
+                console.log(quadruplicar(4));
+            </pre>
+        </div>
     </div>
+
+    <script src="./src/js/index.js"></script>
 </body>
 </html>

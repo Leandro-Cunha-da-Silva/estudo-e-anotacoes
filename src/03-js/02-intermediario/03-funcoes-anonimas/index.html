@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Funções anônimas</title>
+
+    <link rel="stylesheet" href="../00-css-js-inter/reset.css">
+    <link rel="stylesheet" href="../00-css-js-inter/style.css">
 </head>
 <body>
     <div class="container">
-        <nav class="menu">
+        <nav class="menu navegacao">
             <h2>Navegação</h2>
             <ul>
                 <li><a href="../01-escopos-no-js/index.html">01 - Escopos no JS</a></li>
@@ -38,6 +41,21 @@
                 <li><a href="../26-exercicio-06/index.html">26 - Exercício 06</a></li>
             </ul>
         </nav>
+
+        <div class="conteudo">
+            <h1>Funções Anônimas:</h1>
+            <p>São funções que não damos nomes. Para chamar essa função, podemos fazer a seguinte forma:</p>
+            <pre>
+                let resultadoDaSoma = function(numero1, numero2){
+                    return numero1 + numero2
+                }
+
+                console.log(resultadoDaSoma(12, 5));
+            </pre>
+            <p>Aqui a function não tem nome, mas podemos chamalá mesmo assim usando esse jeito.</p>
+        </div>
     </div>
+
+    <script src="./src/js/index.js"></script>
 </body>
 </html>
